@@ -7,8 +7,8 @@ import Boat from "../images/boat.png";
 const AboutUs = () => {
   return (
     <Section heading="About Us" id="about-us" bg="green-light" neg>
-      <Flex>
-        <div sx={{ flex: 2, mr: 5 }}>
+      <Flex sx={{ display: ["block", "flex"] }}>
+        <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>
             Like all of the most storied and epic romances of the 21st century,
             we met on a dating app. After the initial small talk messages about
@@ -37,7 +37,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <Image src={Boat} sx={{ flex: 1, objectFit: "contain" }} />
+        <Image src={Boat} sx={{ flex: 1, objectFit: "contain", mt: [4, 0] }} />
       </Flex>
     </Section>
   );

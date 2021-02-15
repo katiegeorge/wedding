@@ -53,6 +53,7 @@ const IndexPage = () => {
             flexDirection: "column",
             alignSelf: "flex-end",
             mt: 6,
+            mb: 4,
             fontWeight: 200,
             fontSize: 4,
             letterSpacing: "3px",

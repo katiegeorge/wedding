@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Details from "../components/Details";
 import Landing from "../components/Landing";
 import GettingHere from "../components/GettingHere";
+import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 
 const IndexPage = () => {
@@ -21,6 +22,10 @@ const IndexPage = () => {
       label: "Getting here",
       href: "getting-here",
     },
+    {
+      label: "About Us",
+      href: "about-us",
+    },
   ];
   return (
     <Layout>
@@ -28,6 +33,7 @@ const IndexPage = () => {
       <Landing />
       <Details />
       <GettingHere />
+      <AboutUs />
     </Layout>
   );
 };

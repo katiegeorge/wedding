@@ -1,26 +1,14 @@
 /** @jsx jsx */
 
-import { Box, jsx, Heading } from "theme-ui";
-import Separator from "./Separator";
+import { jsx, Heading } from "theme-ui";
+import Section from "./Section";
 
-const Details = ({ className }) => {
+const GettingHere = () => {
   return (
-    <Box
-      className={className}
-      sx={{
-        minHeight: "100vh",
-        bg: "purple-light",
-        p: 4,
-        pt: 6,
-        position: "relative",
-      }}
-      id="getting-here"
-    >
-      <Separator />
-      <Heading as="h1">Getting here</Heading>
+    <Section heading="Getting Here" id="getting-here" bg="purple-light">
       <Heading>Coming soon!</Heading>
-    </Box>
+    </Section>
   );
 };
 
-export default Details;
+export default GettingHere;

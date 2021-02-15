@@ -18,6 +18,10 @@ const Layout = ({ children, className }) => {
             src: url("/fonts/MagnelDisplay-Black.otf");
           }
 
+          html {
+            scroll-behavior: smooth;
+          }
+
           *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;

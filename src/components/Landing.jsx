@@ -14,6 +14,7 @@ const IndexPage = () => {
         minHeight: "100vh",
         boxShadow: "inset 0 0 0 1000px #0041677a",
       }}
+      id="home"
     >
       <Flex
         sx={{

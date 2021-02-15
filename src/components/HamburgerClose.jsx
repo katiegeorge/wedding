@@ -15,7 +15,7 @@ const HamburgerClose = ({ handleClick, active, setActive }) => {
         cursor: "pointer",
         position: "fixed",
         top: "1rem",
-        left: ["75%", "1rem"],
+        left: ["80%", "1rem"],
         color: "yellow-light",
         bg: "blue-dark",
         borderRadius: 5,

@@ -1,6 +1,7 @@
 /** @jsx jsx */
 
 import { Global } from "@emotion/core";
+import Helmet from "react-helmet";
 import { Box, jsx } from "theme-ui";
 
 const Layout = ({ children, className }) => {
@@ -9,6 +10,7 @@ const Layout = ({ children, className }) => {
       <Global
         styles={(theme) => `
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&display=swap');
 
           @font-face {
             font-family: "Magnel Display";
@@ -31,6 +33,10 @@ const Layout = ({ children, className }) => {
 
         `}
       />
+      <Helmet
+        title="Katie and Meg's Wedding"
+        htmlAttributes={{ lang: "en" }}
+      ></Helmet>
       <main>{children}</main>
     </Box>
   );

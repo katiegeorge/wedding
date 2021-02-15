@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { jsx, Flex, Image, Heading, Box } from "theme-ui";
+import { jsx, Flex, Heading, Box } from "theme-ui";
 import BackgroundImage from "../images/engagement-photo.png";
 
 const IndexPage = () => {
@@ -47,10 +47,12 @@ const IndexPage = () => {
             flexDirection: "column",
             alignSelf: "flex-end",
             mt: 6,
-            fontWeight: 300,
+            fontWeight: 200,
+            fontSize: 4,
+            letterSpacing: "3px",
           }}
         >
-          <p>Saturday, June 25, 2022</p>
+          <p>Saturday June 25, 2022</p>
           <p>Saltwater Farm</p>
           <p>San Juan Island, Washington</p>
         </Flex>

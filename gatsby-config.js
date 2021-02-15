@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Wedding",
+    title: "Katie and Meg's Wedding",
   },
-  plugins: ["gatsby-plugin-theme-ui"],
+  plugins: ["gatsby-plugin-theme-ui", `gatsby-plugin-react-helmet`],
 };

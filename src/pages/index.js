@@ -1,24 +1,17 @@
 /** @jsx jsx */
 
-import { jsx, Flex, Image } from "theme-ui";
+import { jsx } from "theme-ui";
 import Layout from "../components/Layout";
-import Logo from "../images/katieandmeglogo.png";
+import Details from "../components/Details";
+import Landing from "../components/Landing";
+import GettingHere from "../components/GettingHere";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Flex
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          height: "100vh",
-        }}
-      >
-        <title>Home Page</title>
-        <Image src={Logo} alt="wedding logo" sx={{ width: "25vw" }}></Image>
-        <p>Coming soon</p>
-      </Flex>
+      <Landing />
+      <Details />
+      <GettingHere />
     </Layout>
   );
 };

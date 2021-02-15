@@ -5,7 +5,7 @@ export default {
   fonts: {
     body:
       'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Inter, serif",
+    heading: "Magnel Display, serif",
     monospace: "Menlo, monospace",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
@@ -23,8 +23,15 @@ export default {
     text: "#000",
     background: "#FCFCFC",
     "blue-dark": "#004167",
-    "blue-light": "#FCFCFC",
+    "blue-light": "#8FB5F0",
     "gray-light": "#E1E1E1",
+    "yellow-light": "#FEF8DC",
+    yellow: "#FED778",
+    pink: "#F6BEBA",
+    "green-light": "#82C7B8",
+    green: "#4CB5B0",
+    "purple-light": "#AFB4D8",
+    purple: "#6F74BE",
   },
   text: {
     heading: {

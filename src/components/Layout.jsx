@@ -28,7 +28,7 @@ const Layout = ({ children, className }) => {
           }
 
           h1 {
-            font-size: ${theme.fontSizes[8]}px;
+            font-size: 5rem;
           }
 
         `}

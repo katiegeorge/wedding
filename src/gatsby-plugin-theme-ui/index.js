@@ -1,6 +1,6 @@
 // example base theme from @theme-ui/presets
 export default {
-  breakpoints: ["40em", "52em", "64em"],
+  breakpoints: ["599px", "999px", "1799px"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body:

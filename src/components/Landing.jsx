@@ -8,6 +8,7 @@ const IndexPage = () => {
     <Box
       sx={{
         background: `url(${BackgroundImage}) no-repeat center center fixed`,
+        backgroundPosition: ["45% center", "center center"],
         backgroundSize: "cover",
         p: 5,
         minHeight: "100vh",
@@ -24,13 +25,17 @@ const IndexPage = () => {
       >
         <Heading
           as="h1"
-          sx={{ color: "green-light", fontSize: "128px", lineHeight: "0.8" }}
+          sx={{
+            color: "green-light",
+            fontSize: ["96px", "128px"],
+            lineHeight: "0.8",
+          }}
         >
           Katie
           <br />{" "}
           <span
             sx={{
-              fontSize: "105px",
+              fontSize: ["75px", "105px"],
               color: "yellow-light",
               verticalAlign: "top",
               display: "inline-block",
@@ -43,7 +48,7 @@ const IndexPage = () => {
         </Heading>
         <Flex
           sx={{
-            alignItems: "flex-end",
+            alignItems: ["center", "flex-end"],
             flexDirection: "column",
             alignSelf: "flex-end",
             mt: 6,
@@ -52,9 +57,31 @@ const IndexPage = () => {
             letterSpacing: "3px",
           }}
         >
-          <p>Saturday June 25, 2022</p>
-          <p>Saltwater Farm</p>
-          <p>San Juan Island, Washington</p>
+          <p
+            sx={{
+              mb: [3, 0],
+              textAlign: ["center", "right"],
+              display: ["none", "block"],
+            }}
+          >
+            Saturday June 25, 2022
+          </p>
+          <p
+            sx={{
+              mb: [3, 0],
+              textAlign: ["center", "right"],
+              display: ["block", "none"],
+            }}
+          >
+            Saturday <br />
+            June 25, 2022
+          </p>
+          <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
+            Saltwater Farm
+          </p>
+          <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
+            San Juan Island, Washington
+          </p>
         </Flex>
       </Flex>
     </Box>

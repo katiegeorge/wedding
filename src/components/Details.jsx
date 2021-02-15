@@ -3,9 +3,9 @@
 import { jsx, Heading } from "theme-ui";
 import Section from "./Section";
 
-const Details = () => {
+const Details = ({ className }) => {
   return (
-    <Section heading="Details" id="details" bg="blue-dark" neg>
+    <Section heading="Details" id="details" light className={className}>
       <Heading>Coming soon!</Heading>
     </Section>
   );

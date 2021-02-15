@@ -3,7 +3,7 @@
 import { jsx, Flex, Heading, Box } from "theme-ui";
 import BackgroundImage from "../images/engagement-photo.png";
 
-const IndexPage = () => {
+const IndexPage = ({ className }) => {
   return (
     <Box
       sx={{
@@ -15,6 +15,7 @@ const IndexPage = () => {
         boxShadow: "inset 0 0 0 1000px #0041677a",
       }}
       id="home"
+      className={className}
     >
       <Flex
         sx={{

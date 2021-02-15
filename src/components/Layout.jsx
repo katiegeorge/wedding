@@ -30,6 +30,7 @@ const Layout = ({ children, className }) => {
           body {
             font: 1.25em/${theme.lineHeights.body} ${theme.fonts.body};
             font-weight: 300;
+            font-size: 16pt;
           }
 
           h1 {

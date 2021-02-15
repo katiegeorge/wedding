@@ -4,9 +4,9 @@ import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
 import Boat from "../images/boat.png";
 
-const AboutUs = () => {
+const AboutUs = ({ className }) => {
   return (
-    <Section heading="About Us" id="about-us" bg="green-light" neg>
+    <Section heading="About Us" id="about-us" light className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>

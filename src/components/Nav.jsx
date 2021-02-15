@@ -1,35 +1,51 @@
 /** @jsx jsx */
 
+import { Fragment } from "react";
 import { jsx } from "theme-ui";
 
-const Nav = ({ items }) => {
+const Nav = ({ items, className, setShowSideBar }) => {
   return (
     <nav
       sx={{
-        position: "fixed",
-        top: "1rem",
-        left: 0,
         letterSpacing: "1px",
         fontWeight: "300",
-        zIndex: "1",
+        position: "fixed",
+        height: "100%",
+        overflow: "auto",
+        pt: 5,
+        top: 0,
+        bottom: 0,
+        left: [0, "auto"],
+        right: [0, "auto"],
+        bg: "blue-dark",
+        width: ["100%", "20%"],
+        zIndex: 1,
+        borderRight: (theme) => `1px solid ${theme.colors["yellow-light"]}`,
       }}
+      className={className}
     >
-      <ul sx={{ listStyleType: "none" }}>
-        {items.map((item) => (
-          <li sx={{ pb: 2 }}>
-            <a
-              href={`#${item.href}`}
-              sx={{
-                color: "yellow-light",
-                textDecoration: "none",
-                ":hover": { textDecoration: "none", filter: "brightness(90%)" },
-              }}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <Fragment>
+        <ul sx={{ listStyleType: "none" }}>
+          {items.map((item) => (
+            <li sx={{ pb: 2 }}>
+              <a
+                href={`#${item.href}`}
+                onClick={() => setShowSideBar(false)}
+                sx={{
+                  color: "white",
+                  textDecoration: "none",
+                  ":hover": {
+                    textDecoration: "none",
+                    filter: "brightness(90%)",
+                  },
+                }}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Fragment>
     </nav>
   );
 };

@@ -16,22 +16,23 @@ const IndexPage = () => {
   const [visible, setVisible] = useState(false);
   const [showSideBar, setShowSideBar] = useState(false);
 
+  const wndw = typeof window !== "undefined" && window;
+
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = wndw.pageYOffset;
       const vsble = prevScrollPos > currentScrollPos;
 
       setPrevScrollPos(currentScrollPos);
       setVisible(vsble);
     };
 
-    console.log(prevScrollPos, visible);
-    window.addEventListener("scroll", handleScroll);
+    wndw.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      wndw.removeEventListener("scroll", handleScroll);
     };
-  }, [window.pageYOffset]);
+  }, [wndw.pageYOffset]);
 
   const items = [
     {

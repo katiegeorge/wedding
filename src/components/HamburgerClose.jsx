@@ -2,7 +2,7 @@
 
 import { jsx } from "theme-ui";
 
-const HamburgerClose = ({ handleClick, active, setActive }) => {
+const HamburgerClose = ({ handleClick, active, setActive, className }) => {
   const onButtonClick = () => {
     setActive(!active);
     handleClick();
@@ -10,17 +10,19 @@ const HamburgerClose = ({ handleClick, active, setActive }) => {
 
   return (
     <button
+      className={className}
       sx={{
         zIndex: 1,
         cursor: "pointer",
         position: "fixed",
         top: "1rem",
         left: ["80%", "1rem"],
-        color: "yellow-light",
-        bg: "blue-dark",
+        color: "#df8882",
+        bg: "transparent",
         borderRadius: 5,
         p: 2,
         pb: 0,
+        //ea948d
 
         transitionProperty: "opacity, filter",
         transitionDuration: "0.15s",
@@ -54,7 +56,7 @@ const HamburgerClose = ({ handleClick, active, setActive }) => {
             marginTop: "-2px",
             width: "30px",
             height: "3px",
-            backgroundColor: "yellow-light",
+            backgroundColor: "#df8882",
             borderRadius: "4px",
             position: "absolute",
             transitionProperty: "transform",
@@ -68,7 +70,7 @@ const HamburgerClose = ({ handleClick, active, setActive }) => {
             "&::before": {
               width: "30px",
               height: "3px",
-              backgroundColor: "yellow-light",
+              backgroundColor: "#df8882",
               borderRadius: "4px",
               position: "absolute",
               transition: active
@@ -86,7 +88,7 @@ const HamburgerClose = ({ handleClick, active, setActive }) => {
             "&::after": {
               width: "30px",
               height: "3px",
-              backgroundColor: "yellow-light",
+              backgroundColor: "#df8882",
               borderRadius: "4px",
               position: "absolute",
               transition: active

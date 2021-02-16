@@ -12,7 +12,7 @@ const Nav = ({ items, className, setShowSideBar }) => {
         position: "fixed",
         height: "100%",
         overflow: "auto",
-        pt: 5,
+        pt: "100px",
         top: 0,
         bottom: 0,
         left: [0, "auto"],
@@ -20,12 +20,12 @@ const Nav = ({ items, className, setShowSideBar }) => {
         bg: "blue-dark",
         width: ["100%", "20%"],
         zIndex: 1,
-        borderRight: (theme) => `1px solid ${theme.colors["yellow-light"]}`,
+        boxShadow: "3px 0 4px 0px #09283a",
       }}
       className={className}
     >
       <Fragment>
-        <ul sx={{ listStyleType: "none" }}>
+        <ul sx={{ listStyleType: "none", pl: 4 }}>
           {items.map((item) => (
             <li sx={{ pb: 2 }}>
               <a

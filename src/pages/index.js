@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import { useState } from "react";
-import { jsx, Grid } from "theme-ui";
+import { jsx, Grid, Image } from "theme-ui";
 import Layout from "../components/Layout";
 import Details from "../components/Details";
 import Landing from "../components/Landing";
@@ -9,6 +9,7 @@ import GettingHere from "../components/GettingHere";
 import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import HamburgerClose from "../components/HamburgerClose";
+import MiniLogo from "../images/mini-logo.png";
 
 const IndexPage = () => {
   const items = [
@@ -37,13 +38,36 @@ const IndexPage = () => {
         <Nav
           items={items}
           setShowSideBar={setShowSideBar}
-          sx={{ ml: showSideBar ? 0 : "-100%", transition: "0.2s ease-in-out" }}
+          sx={{ ml: showSideBar ? 0 : "-101%", transition: "0.2s ease-in-out" }}
         />
         <div>
+          <div
+            sx={{
+              width: "100%",
+              height: "75px",
+              position: "fixed",
+              top: "0",
+              zIndex: 1,
+              bg: "blue-dark",
+              boxShadow: "0px 3px 4px 0px #09283a",
+              display: ["block", "none"],
+            }}
+          >
+            <Image
+              src={MiniLogo}
+              sx={{ height: "37px", mt: "18px", ml: "24px" }}
+            />
+            <HamburgerClose
+              handleClick={() => setShowSideBar(!showSideBar)}
+              setActive={setShowSideBar}
+              active={showSideBar}
+            />
+          </div>
           <HamburgerClose
             handleClick={() => setShowSideBar(!showSideBar)}
             setActive={setShowSideBar}
             active={showSideBar}
+            sx={{ display: ["none", "block"] }}
           />
           <Landing
             sx={{

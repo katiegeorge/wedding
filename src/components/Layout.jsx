@@ -6,7 +6,10 @@ import { Box, jsx } from "theme-ui";
 
 const Layout = ({ children, className }) => {
   return (
-    <Box sx={{ mx: `auto`, color: "#fff" }} className={className}>
+    <Box
+      sx={{ mx: `auto`, color: "#fff", width: "100vw", overflow: "hidden" }}
+      className={className}
+    >
       <Global
         styles={(theme) => `
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
@@ -34,7 +37,7 @@ const Layout = ({ children, className }) => {
           }
 
           h1 {
-            font-size: 5rem;
+            font-size: 4rem;
           }
 
         `}

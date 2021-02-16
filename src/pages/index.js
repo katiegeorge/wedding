@@ -13,7 +13,7 @@ import MiniLogo from "../images/mini-logo.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const [showSideBar, setShowSideBar] = useState(false);
 
   const wndw = typeof window !== "undefined" && window;
@@ -21,7 +21,7 @@ const IndexPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = wndw.pageYOffset;
-      const vsble = prevScrollPos > currentScrollPos;
+      const vsble = prevScrollPos > currentScrollPos || currentScrollPos === 0;
 
       setPrevScrollPos(currentScrollPos);
       setVisible(vsble);

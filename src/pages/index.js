@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { useState } from "react";
-import { jsx, Grid, Image } from "theme-ui";
+import { useState, useEffect } from "react";
+import { jsx, Grid, Image, Flex } from "theme-ui";
 import Layout from "../components/Layout";
 import Details from "../components/Details";
 import Landing from "../components/Landing";
@@ -12,6 +12,27 @@ import HamburgerClose from "../components/HamburgerClose";
 import MiniLogo from "../images/mini-logo.png";
 
 const IndexPage = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState("");
+  const [visible, setVisible] = useState(false);
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const vsble = prevScrollPos > currentScrollPos;
+
+      setPrevScrollPos(currentScrollPos);
+      setVisible(vsble);
+    };
+
+    console.log(prevScrollPos, visible);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [window.pageYOffset]);
+
   const items = [
     {
       label: "Home",
@@ -30,7 +51,6 @@ const IndexPage = () => {
       href: "about-us",
     },
   ];
-  const [showSideBar, setShowSideBar] = useState(false);
 
   return (
     <Layout>
@@ -41,33 +61,33 @@ const IndexPage = () => {
           sx={{ ml: showSideBar ? 0 : "-101%", transition: "0.2s ease-in-out" }}
         />
         <div>
-          <div
+          <Flex
             sx={{
               width: "100%",
               height: "75px",
               position: "fixed",
-              top: "0",
+              top: visible ? "0" : "-100px",
               zIndex: 1,
               bg: "blue-dark",
               boxShadow: "0px 3px 4px 0px #09283a",
-              display: ["block", "none"],
+              display: ["flex", "none"],
+              transition: "0.2s ease",
+              justifyContent: "space-between",
+              px: 4,
             }}
           >
-            <Image
-              src={MiniLogo}
-              sx={{ height: "37px", mt: "18px", ml: "24px" }}
-            />
+            <Image src={MiniLogo} sx={{ height: "37px", mt: "18px" }} />
             <HamburgerClose
               handleClick={() => setShowSideBar(!showSideBar)}
               setActive={setShowSideBar}
               active={showSideBar}
             />
-          </div>
+          </Flex>
           <HamburgerClose
             handleClick={() => setShowSideBar(!showSideBar)}
             setActive={setShowSideBar}
             active={showSideBar}
-            sx={{ display: ["none", "block"] }}
+            sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
           <Landing
             sx={{

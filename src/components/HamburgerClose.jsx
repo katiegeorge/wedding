@@ -14,8 +14,6 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
       sx={{
         zIndex: 1,
         cursor: "pointer",
-        position: "fixed",
-        top: "1rem",
         left: ["80%", "1rem"],
         color: "#df8882",
         bg: "transparent",

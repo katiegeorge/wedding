@@ -9,6 +9,7 @@ const Separator = ({ neg }) => {
     "purple-light",
     "yellow-light",
     "purple-light",
+    "purple",
     "green-light",
   ];
   return (

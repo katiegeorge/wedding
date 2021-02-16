@@ -22,7 +22,7 @@ const IndexPage = () => {
       href: "details",
     },
     {
-      label: "Getting here",
+      label: "Getting Here",
       href: "getting-here",
     },
     {

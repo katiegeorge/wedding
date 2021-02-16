@@ -34,6 +34,9 @@ const Nav = ({ items, className, setShowSideBar }) => {
                 sx={{
                   color: "white",
                   textDecoration: "none",
+                  display: "inline-block",
+                  width: "100%",
+                  py: "2",
                   ":hover": {
                     textDecoration: "none",
                     filter: "brightness(90%)",

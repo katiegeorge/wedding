@@ -19,7 +19,7 @@ const Separator = ({ neg }) => {
         top: "-40px",
         width: "105%",
         left: "-5px",
-        transform: neg ? "rotate(-3deg)" : "rotate(3deg)",
+        transform: neg ? "rotate(-2deg)" : "rotate(2deg)",
       }}
     >
       {colors.map((color) => (

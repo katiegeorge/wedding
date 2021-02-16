@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import { Fragment } from "react";
-import { jsx } from "theme-ui";
+import { jsx, Image, Flex } from "theme-ui";
 
 const Nav = ({ items, className, setShowSideBar }) => {
   return (
@@ -43,7 +43,18 @@ const Nav = ({ items, className, setShowSideBar }) => {
                   },
                 }}
               >
-                {item.label}
+                <Flex sx={{ alignItems: "center" }}>
+                  <Image
+                    src={item.icon}
+                    sx={{
+                      width: "25px",
+                      height: "25px",
+                      objectFit: "contain",
+                      mr: 3,
+                    }}
+                  />
+                  {item.label}
+                </Flex>
               </a>
             </li>
           ))}

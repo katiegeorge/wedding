@@ -12,7 +12,7 @@ const IndexPage = ({ className }) => {
         backgroundSize: "cover",
         p: 5,
         minHeight: "100vh",
-        boxShadow: "inset 0 0 0 1000px #0041677a",
+        boxShadow: "inset 0 0 0 1000px #0d2d5e99",
       }}
       id="home"
       className={className}

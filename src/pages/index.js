@@ -10,6 +10,10 @@ import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import HamburgerClose from "../components/HamburgerClose";
 import MiniLogo from "../images/mini-logo.png";
+import HomeIcon from "../images/home_24px.png";
+import GettingHereIcon from "../images/explore_24px.png";
+import AboutUsIcon from "../images/favorite_border_24px.png";
+import DetailsIcon from "../images/toc_24px.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
@@ -21,7 +25,10 @@ const IndexPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = wndw.pageYOffset;
-      const vsble = prevScrollPos > currentScrollPos || currentScrollPos === 0;
+      const vsble =
+        prevScrollPos > currentScrollPos ||
+        currentScrollPos === 0 ||
+        showSideBar;
 
       setPrevScrollPos(currentScrollPos);
       setVisible(vsble);
@@ -38,18 +45,22 @@ const IndexPage = () => {
     {
       label: "Home",
       href: "home",
+      icon: HomeIcon,
     },
     {
       label: "Details",
       href: "details",
+      icon: DetailsIcon,
     },
     {
       label: "Getting Here",
       href: "getting-here",
+      icon: GettingHereIcon,
     },
     {
       label: "About Us",
       href: "about-us",
+      icon: AboutUsIcon,
     },
   ];
 
@@ -77,7 +88,9 @@ const IndexPage = () => {
               px: 4,
             }}
           >
-            <Image src={MiniLogo} sx={{ height: "37px", mt: "18px" }} />
+            <a href="#home">
+              <Image src={MiniLogo} sx={{ height: "37px", mt: "18px" }} />
+            </a>
             <HamburgerClose
               handleClick={() => setShowSideBar(!showSideBar)}
               setActive={setShowSideBar}
@@ -92,25 +105,25 @@ const IndexPage = () => {
           />
           <Landing
             sx={{
-              pl: showSideBar ? [4, "22%"] : ["auto"],
+              pl: showSideBar ? [4, "20%"] : ["auto"],
               transition: "0.2s ease-in-out",
             }}
           />
           <Details
             sx={{
-              pl: showSideBar ? [4, "22%"] : [4, "85px"],
+              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
               transition: "0.2s ease-in-out",
             }}
           />
           <GettingHere
             sx={{
-              pl: showSideBar ? [4, "22%"] : [4, "85px"],
+              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
               transition: "0.2s ease-in-out",
             }}
           />
           <AboutUs
             sx={{
-              pl: showSideBar ? [4, "22%"] : [4, "85px"],
+              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
               transition: "0.2s ease-in-out",
             }}
           />

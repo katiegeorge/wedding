@@ -16,13 +16,10 @@ const Welcome = ({ className, showSideBar }) => {
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>It’s finally happening!</p>
           <p sx={{ mt: 4 }}>
-            Welcome to our wedding website, we can’t wait to celebrate our
-            special day with you.
-          </p>
-          <p sx={{ mt: 4 }}>
-            We’ve created this website as a convenient and interactive way to
-            share all of the important details with you in the lead up to our
-            wedding. And to have some fun.
+            Welcome to our wedding website. We’ve created this website (from
+            scratch!) as a convenient and interactive way to share all of the
+            important details with you in the lead up to our wedding. And to
+            have some fun.
           </p>
           <p sx={{ mt: 4 }}>
             You can also read more about our journey, get to know our amazing
@@ -32,7 +29,7 @@ const Welcome = ({ className, showSideBar }) => {
             So have fun, take a look around and don’t forget to RSVP!
           </p>
           <p sx={{ mt: 4 }}>
-            Finally – thank you for your ongoing love and support. We are so
+            Finally, thank you for your ongoing love and support. We are so
             excited to share this day with you and look forward to dancing the
             night away with all of our favorite people!
           </p>

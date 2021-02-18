@@ -1,12 +1,27 @@
 /** @jsx jsx */
 
-import { jsx, Heading } from "theme-ui";
+import { jsx, Heading, Flex } from "theme-ui";
 import Section from "./Section";
 
-const Details = ({ className }) => {
+const Details = ({ className, showSideBar }) => {
   return (
-    <Section heading="Details" id="details" light className={className}>
-      <Heading>Coming soon!</Heading>
+    <Section
+      heading="Details"
+      id="details"
+      light
+      className={className}
+      showSideBar={showSideBar}
+    >
+      <Flex
+        sx={{
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          minHeight: "80vh",
+        }}
+      >
+        <Heading sx={{ mb: 5 }}>Stay tuned!</Heading>
+      </Flex>
     </Section>
   );
 };

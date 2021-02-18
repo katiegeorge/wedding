@@ -32,6 +32,10 @@ const Layout = ({ children, className }) => {
             outline: none;
           }
 
+          #gatsby-focus-wrapper:focus {
+            border: none !important;
+          }
+
           *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;

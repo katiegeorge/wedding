@@ -28,6 +28,7 @@ export default {
     "yellow-light": "#FEF8DC",
     yellow: "#FED778",
     pink: "#F6BEBA",
+    "dark-pink": "#df8882",
     "green-light": "#82C7B8",
     green: "#4CB5B0",
     "purple-light": "#AFB4D8",

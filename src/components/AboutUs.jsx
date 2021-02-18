@@ -4,9 +4,15 @@ import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
 import Boat from "../images/boat.png";
 
-const AboutUs = ({ className }) => {
+const AboutUs = ({ className, showSideBar }) => {
   return (
-    <Section heading="About Us" id="about-us" light className={className}>
+    <Section
+      heading="About Us"
+      id="about-us"
+      light
+      className={className}
+      showSideBar={showSideBar}
+    >
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>

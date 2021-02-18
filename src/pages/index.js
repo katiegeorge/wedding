@@ -8,6 +8,7 @@ import Landing from "../components/Landing";
 import GettingHere from "../components/GettingHere";
 import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
+import Welcome from "../components/Welcome";
 import HamburgerClose from "../components/HamburgerClose";
 import MiniLogo from "../images/mini-logo.png";
 import HomeIcon from "../images/home_24px.png";
@@ -27,7 +28,7 @@ const IndexPage = () => {
       const currentScrollPos = wndw.pageYOffset;
       const vsble =
         prevScrollPos > currentScrollPos ||
-        currentScrollPos === 0 ||
+        currentScrollPos < 50 ||
         showSideBar;
 
       setPrevScrollPos(currentScrollPos);
@@ -46,6 +47,11 @@ const IndexPage = () => {
       label: "Home",
       href: "home",
       icon: HomeIcon,
+    },
+    {
+      label: "Welcome",
+      href: "welcome",
+      icon: DetailsIcon,
     },
     {
       label: "Details",
@@ -106,27 +112,12 @@ const IndexPage = () => {
           <Landing
             sx={{
               pl: showSideBar ? [4, "20%"] : ["auto"],
-              transition: "0.2s ease-in-out",
             }}
           />
-          <Details
-            sx={{
-              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
-              transition: "0.2s ease-in-out",
-            }}
-          />
-          <GettingHere
-            sx={{
-              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
-              transition: "0.2s ease-in-out",
-            }}
-          />
-          <AboutUs
-            sx={{
-              pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
-              transition: "0.2s ease-in-out",
-            }}
-          />
+          <Welcome showSideBar={showSideBar} />
+          <Details showSideBar={showSideBar} />
+          <GettingHere showSideBar={showSideBar} />
+          <AboutUs showSideBar={showSideBar} />
         </div>
       </Grid>
     </Layout>

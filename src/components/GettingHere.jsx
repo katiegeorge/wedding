@@ -5,13 +5,18 @@ import Section from "./Section";
 import Ferry from "../images/ferry.svg";
 import { keyframes } from "@emotion/core";
 
-const GettingHere = ({ className }) => {
+const GettingHere = ({ className, showSideBar }) => {
   const rockBoat = keyframes`
         50% { transform:rotate(-5deg) translateY(-5px) }
   `;
 
   return (
-    <Section heading="Getting Here" id="getting-here" className={className}>
+    <Section
+      heading="Getting Here"
+      id="getting-here"
+      className={className}
+      showSideBar={showSideBar}
+    >
       <Flex
         sx={{
           alignItems: "center",

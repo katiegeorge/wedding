@@ -15,7 +15,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
         zIndex: 1,
         cursor: "pointer",
         left: ["80%", "1rem"],
-        color: "#df8882",
+        color: active ? "pink" : "dark-pink",
         bg: "transparent",
         borderRadius: 5,
         p: 2,
@@ -54,7 +54,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             marginTop: "-2px",
             width: "30px",
             height: "3px",
-            backgroundColor: "#df8882",
+            backgroundColor: active ? "pink" : "dark-pink",
             borderRadius: "4px",
             position: "absolute",
             transitionProperty: "transform",
@@ -68,7 +68,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             "&::before": {
               width: "30px",
               height: "3px",
-              backgroundColor: "#df8882",
+              backgroundColor: active ? "pink" : "dark-pink",
               borderRadius: "4px",
               position: "absolute",
               transition: active
@@ -86,7 +86,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             "&::after": {
               width: "30px",
               height: "3px",
-              backgroundColor: "#df8882",
+              backgroundColor: active ? "pink" : "dark-pink",
               borderRadius: "4px",
               position: "absolute",
               transition: active

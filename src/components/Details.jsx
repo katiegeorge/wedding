@@ -17,10 +17,9 @@ const Details = ({ className, showSideBar }) => {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          minHeight: "80vh",
         }}
       >
-        <Heading sx={{ mb: 5 }}>Stay tuned!</Heading>
+        <Heading sx={{ my: 5 }}>Stay tuned!</Heading>
       </Flex>
     </Section>
   );

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { jsx, Grid, Image, Flex } from "theme-ui";
+
 import Layout from "../components/Layout";
 import Details from "../components/Details";
 import Landing from "../components/Landing";
@@ -9,12 +10,16 @@ import GettingHere from "../components/GettingHere";
 import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
+import ThingsToDo from "../components/ThingsToDo";
 import HamburgerClose from "../components/HamburgerClose";
+
 import MiniLogo from "../images/mini-logo.png";
 import HomeIcon from "../images/home_24px.png";
 import GettingHereIcon from "../images/explore_24px.png";
 import AboutUsIcon from "../images/favorite_border_24px.png";
-import DetailsIcon from "../images/toc_24px.png";
+import DetailsIcon from "../images/details-icon.png";
+import WelcomeIcon from "../images/welcome-icon.png";
+import ThingsToDoIcon from "../images/things-to-do-icon.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
@@ -51,7 +56,7 @@ const IndexPage = () => {
     {
       label: "Welcome",
       href: "welcome",
-      icon: DetailsIcon,
+      icon: WelcomeIcon,
     },
     {
       label: "Details",
@@ -62,6 +67,11 @@ const IndexPage = () => {
       label: "Getting Here",
       href: "getting-here",
       icon: GettingHereIcon,
+    },
+    {
+      label: "Things To Do",
+      href: "things-to-do",
+      icon: ThingsToDoIcon,
     },
     {
       label: "About Us",
@@ -117,6 +127,7 @@ const IndexPage = () => {
           <Welcome showSideBar={showSideBar} />
           <Details showSideBar={showSideBar} />
           <GettingHere showSideBar={showSideBar} />
+          <ThingsToDo showSideBar={showSideBar} />
           <AboutUs showSideBar={showSideBar} />
         </div>
       </Grid>

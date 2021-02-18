@@ -15,7 +15,7 @@ const Section = ({ light, showSideBar, id, heading, children, className }) => {
         color: light ? "blue-dark" : "yellow-light",
         bg: light ? "yellow-light" : "blue-dark",
         transition: "0.2s ease-in-out",
-        pl: showSideBar ? [4, "calc(20% + 85px)"] : [4, "85px"],
+        pl: [4, "85px"],
         pb: 6,
       }}
       id={id}

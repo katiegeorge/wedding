@@ -9,7 +9,6 @@ const AboutUs = ({ className, showSideBar }) => {
     <Section
       heading="About Us"
       id="about-us"
-      light
       className={className}
       showSideBar={showSideBar}
     >

@@ -13,6 +13,8 @@ const IndexPage = ({ className }) => {
         p: 5,
         minHeight: "100vh",
         boxShadow: "inset 0 0 0 1000px #0d2d5e99",
+        transition: ".2s ease",
+        width: "100vw",
       }}
       id="home"
       className={className}

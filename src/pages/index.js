@@ -21,6 +21,7 @@ import AboutUsIcon from "../images/favorite_border_24px.png";
 import DetailsIcon from "../images/details-icon.png";
 import WelcomeIcon from "../images/welcome-icon.png";
 import ThingsToDoIcon from "../images/things-to-do-icon.png";
+import BridalPartyIcon from "../images/bridal-party-icon.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
@@ -82,7 +83,7 @@ const IndexPage = () => {
     {
       label: "Bridal Party",
       href: "bridal-party",
-      icon: AboutUsIcon,
+      icon: BridalPartyIcon,
     },
   ];
 

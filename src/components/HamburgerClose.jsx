@@ -15,7 +15,10 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
         zIndex: 1,
         cursor: "pointer",
         left: ["80%", "1rem"],
-        color: active ? "pink" : "dark-pink",
+        color: "yellow-light",
+        borderTop: active
+          ? "none"
+          : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
         bg: "transparent",
         borderRadius: 5,
         p: 2,
@@ -53,9 +56,12 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             top: "50%",
             marginTop: "-2px",
             width: "30px",
-            height: "3px",
-            backgroundColor: active ? "pink" : "dark-pink",
-            borderRadius: "4px",
+            height: active ? "3px" : "4px",
+            backgroundColor: "yellow-light",
+            borderTop: active
+              ? "none"
+              : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+            borderRadius: active ? "5px" : "1px",
             position: "absolute",
             transitionProperty: "transform",
             transitionDuration: "0.4s",
@@ -67,9 +73,12 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
 
             "&::before": {
               width: "30px",
-              height: "3px",
-              backgroundColor: active ? "pink" : "dark-pink",
-              borderRadius: "4px",
+              height: active ? "3px" : "4px",
+              backgroundColor: "yellow-light",
+              borderTop: active
+                ? "none"
+                : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+              borderRadius: active ? "5px" : "1px",
               position: "absolute",
               transition: active
                 ? "top 0.1s ease-out"
@@ -85,9 +94,12 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
 
             "&::after": {
               width: "30px",
-              height: "3px",
-              backgroundColor: active ? "pink" : "dark-pink",
-              borderRadius: "4px",
+              height: active ? "3px" : "4px",
+              backgroundColor: "yellow-light",
+              borderTop: active
+                ? "none"
+                : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+              borderRadius: active ? "5px" : "1px",
               position: "absolute",
               transition: active
                 ? "bottom 0.1s ease-out"

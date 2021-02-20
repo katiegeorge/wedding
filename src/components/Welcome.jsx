@@ -4,14 +4,9 @@ import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
 import Smiley from "../images/smiley-bw.png";
 
-const Welcome = ({ className, showSideBar }) => {
+const Welcome = ({ className }) => {
   return (
-    <Section
-      heading="Welcome!"
-      id="welcome"
-      className={className}
-      showSideBar={showSideBar}
-    >
+    <Section heading="Welcome!" id="welcome" className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>It’s finally happening!</p>

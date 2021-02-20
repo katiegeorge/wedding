@@ -8,8 +8,8 @@ const IndexPage = ({ className }) => {
     <Box
       sx={{
         background: `url(${BackgroundImage}) no-repeat center center fixed`,
-        backgroundPosition: ["40% center", "center center"],
-        backgroundSize: ["auto", "cover"],
+        backgroundPosition: ["45% center", "center center"],
+        backgroundSize: "cover",
         p: 5,
         minHeight: "100vh",
         boxShadow: "inset 0 0 0 1000px #0d2d5e99",

@@ -4,14 +4,13 @@ import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
 import Boat from "../images/boat.png";
 
-const ThingsToDo = ({ className, showSideBar }) => {
+const ThingsToDo = ({ className }) => {
   return (
     <Section
       heading="Things To Do"
       id="things-to-do"
       light
       className={className}
-      showSideBar={showSideBar}
     >
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>

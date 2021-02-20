@@ -3,15 +3,9 @@
 import { jsx, Heading, Flex } from "theme-ui";
 import Section from "./Section";
 
-const Details = ({ className, showSideBar }) => {
+const Details = ({ className }) => {
   return (
-    <Section
-      heading="Details"
-      id="details"
-      light
-      className={className}
-      showSideBar={showSideBar}
-    >
+    <Section heading="Details" id="details" light className={className}>
       <Flex
         sx={{
           alignItems: "center",

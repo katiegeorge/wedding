@@ -11,6 +11,7 @@ import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
 import ThingsToDo from "../components/ThingsToDo";
+import BridalParty from "../components/BridalParty";
 import HamburgerClose from "../components/HamburgerClose";
 
 import MiniLogo from "../images/mini-logo.png";
@@ -78,6 +79,11 @@ const IndexPage = () => {
       href: "about-us",
       icon: AboutUsIcon,
     },
+    {
+      label: "Bridal Party",
+      href: "bridal-party",
+      icon: AboutUsIcon,
+    },
   ];
 
   return (
@@ -120,11 +126,12 @@ const IndexPage = () => {
             sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
           <Landing />
-          <Welcome showSideBar={showSideBar} />
-          <Details showSideBar={showSideBar} />
-          <GettingHere showSideBar={showSideBar} />
-          <ThingsToDo showSideBar={showSideBar} />
-          <AboutUs showSideBar={showSideBar} />
+          <Welcome />
+          <Details />
+          <GettingHere />
+          <ThingsToDo />
+          <AboutUs />
+          <BridalParty />
         </div>
       </Grid>
     </Layout>

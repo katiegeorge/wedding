@@ -4,14 +4,9 @@ import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
 import Boat from "../images/boat.png";
 
-const AboutUs = ({ className, showSideBar }) => {
+const AboutUs = ({ className }) => {
   return (
-    <Section
-      heading="About Us"
-      id="about-us"
-      className={className}
-      showSideBar={showSideBar}
-    >
+    <Section heading="About Us" id="about-us" className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>
@@ -47,7 +42,8 @@ const AboutUs = ({ className, showSideBar }) => {
           sx={{
             flex: 1,
             objectFit: "cover",
-            mt: [4, 0],
+            mt: 4,
+            mb: [0, 4],
             borderRadius: "8%",
           }}
         />

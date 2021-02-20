@@ -50,8 +50,8 @@ const BridalParty = ({ className }) => {
         <Flex sx={{ display: ["block", "flex"] }}>
           <div sx={{ flex: "1", mr: [0, 5] }}>
             <p sx={{ mt: 4 }}>
-              <Heading>Meg</Heading>
-              {megPeople.map((person) => (
+              <Heading sx={{ mb: 1 }}>Meg</Heading>
+              {/* {megPeople.map((person) => (
                 <div>
                   <Flex sx={{ mt: 5, alignItems: "center" }}>
                     <Image
@@ -72,13 +72,14 @@ const BridalParty = ({ className }) => {
                   </Flex>
                   <p>{person.description}</p>
                 </div>
-              ))}
+              ))} */}
+              Coming soon!
             </p>
           </div>
           <div sx={{ flex: "1" }}>
             <p sx={{ mt: 4 }}>
-              <Heading>Katie</Heading>
-              {katiePeople.map((person) => (
+              <Heading sx={{ mb: 1 }}>Katie</Heading>
+              {/* {katiePeople.map((person) => (
                 <div>
                   <Flex sx={{ mt: 5, alignItems: "center" }}>
                     <Image
@@ -99,7 +100,8 @@ const BridalParty = ({ className }) => {
                   </Flex>
                   <p>{person.description}</p>
                 </div>
-              ))}
+              ))} */}
+              Coming soon!
             </p>
           </div>
         </Flex>

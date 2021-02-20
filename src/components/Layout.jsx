@@ -7,7 +7,12 @@ import { Box, jsx } from "theme-ui";
 const Layout = ({ children, className }) => {
   return (
     <Box
-      sx={{ mx: `auto`, color: "#fff", width: "100vw", overflow: "hidden" }}
+      sx={{
+        mx: `auto`,
+        color: "#fff",
+        width: "100vw",
+        overflow: "hidden",
+      }}
       className={className}
     >
       <Global
@@ -45,6 +50,10 @@ const Layout = ({ children, className }) => {
             font: 1.25em/${theme.lineHeights.body} ${theme.fonts.body};
             font-weight: 300;
             font-size: 16pt;
+          }
+
+          p {
+            max-width: 75ch;
           }
 
           h1 {

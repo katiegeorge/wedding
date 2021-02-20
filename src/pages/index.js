@@ -119,11 +119,7 @@ const IndexPage = () => {
             active={showSideBar}
             sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
-          <Landing
-            sx={{
-              pl: showSideBar ? [4, "20%"] : ["auto"],
-            }}
-          />
+          <Landing />
           <Welcome showSideBar={showSideBar} />
           <Details showSideBar={showSideBar} />
           <GettingHere showSideBar={showSideBar} />

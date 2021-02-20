@@ -2,7 +2,7 @@
 
 import { jsx, Image, Flex } from "theme-ui";
 import Section from "./Section";
-import Boat from "../images/boat.png";
+import Smiley from "../images/smiley-bw.png";
 
 const Welcome = ({ className, showSideBar }) => {
   return (
@@ -34,7 +34,19 @@ const Welcome = ({ className, showSideBar }) => {
             night away with all of our favorite people!
           </p>
         </div>
-        <Image src={Boat} sx={{ flex: 1, objectFit: "contain", mt: [4, 0] }} />
+        <Image
+          src={Smiley}
+          sx={{
+            flex: 1,
+            objectFit: "contain",
+            mt: [4, 0],
+            position: ["static", "absolute"],
+            right: "64px",
+            height: "400px",
+            bottom: "42px",
+            mb: ["-132px", 0],
+          }}
+        />
       </Flex>
     </Section>
   );

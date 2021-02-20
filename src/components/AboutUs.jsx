@@ -42,7 +42,15 @@ const AboutUs = ({ className, showSideBar }) => {
           </p>
         </div>
 
-        <Image src={Boat} sx={{ flex: 1, objectFit: "contain", mt: [4, 0] }} />
+        <Image
+          src={Boat}
+          sx={{
+            flex: 1,
+            objectFit: "cover",
+            mt: [4, 0],
+            borderRadius: "8%",
+          }}
+        />
       </Flex>
     </Section>
   );

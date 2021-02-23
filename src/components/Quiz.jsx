@@ -30,13 +30,18 @@ const Quiz = ({ className }) => {
           <QuizProgressBar questionNumber={questionNumber} />
         )}
         {questionNumber === 0 && (
-          <Button
-            variant="primary"
-            sx={{ mt: 5 }}
-            onClick={() => setQuestionNumber(1)}
-          >
-            Play Now
-          </Button>
+          <Flex sx={{ flexDirection: "column", alignItems: "center", mt: 5 }}>
+            <p>
+              How well do you know Meg and Katie? Find out by taking our quiz!
+            </p>
+            <Button
+              variant="primary"
+              sx={{ mt: 5, width: "fit-content" }}
+              onClick={() => setQuestionNumber(1)}
+            >
+              Play Now
+            </Button>
+          </Flex>
         )}
         {questionNumber === 1 && (
           <QuizQuestion
@@ -53,8 +58,8 @@ const Quiz = ({ className }) => {
           <QuizQuestion
             num={2}
             onClick={() => setQuestionNumber(3)}
-            firstQ="Who puts triple the parmesan on everything?"
-            secondQ="Who puts triple the vanilla extract in everything?"
+            firstQ="Who triples the amount of parmesan cheese in a recipe?"
+            secondQ="Who triples the amount of vanilla extract in a recipe?"
             answer="katie-1"
             myAnswers={myAnswers}
             setMyAnswers={setMyAnswers}

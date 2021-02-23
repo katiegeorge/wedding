@@ -59,12 +59,13 @@ const QuizQuestion = ({
     >
       <p sx={{ fontWeight: 200 }}>QUESTION {num}</p>
       <Grid
-        columns={2}
+        columns={[1, 2]}
         gap={6}
         sx={{ mt: 4, textAlign: "center", gridRowGap: 4, mb: 4 }}
       >
         <p sx={{ fontSize: 4 }}>{firstQ}</p>
-        <p sx={{ fontSize: 4 }}>{secondQ}</p>
+        <p sx={{ fontSize: 4, display: ["none", "block"] }}>{secondQ}</p>
+
         <Flex sx={{ justifyContent: "center" }}>
           <div>
             <Button
@@ -91,6 +92,7 @@ const QuizQuestion = ({
                 src={Meg}
                 sx={{
                   height: "200px",
+                  objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "meg-1" && active !== "" ? 0.5 : 1,
                 }}
@@ -144,6 +146,7 @@ const QuizQuestion = ({
                 src={Katie}
                 sx={{
                   height: "200px",
+                  objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "katie-1" && active !== "" ? 0.5 : 1,
                 }}
@@ -175,6 +178,7 @@ const QuizQuestion = ({
           </div>
         </Flex>
 
+        <p sx={{ fontSize: 4, display: ["block", "none"] }}>{secondQ}</p>
         <Flex sx={{ justifyContent: "center" }}>
           <div>
             <Button
@@ -201,6 +205,7 @@ const QuizQuestion = ({
                 src={Meg}
                 sx={{
                   height: "200px",
+                  objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "katie-1" && active !== "" ? 0.5 : 1,
                 }}
@@ -255,6 +260,7 @@ const QuizQuestion = ({
                 src={Katie}
                 sx={{
                   height: "200px",
+                  objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "meg-1" && active !== "" ? 0.5 : 1,
                 }}

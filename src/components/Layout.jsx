@@ -39,7 +39,7 @@ const Layout = ({ children, className }) => {
           }
 
           :focus {
-            border: 2px solid ${theme.colors["yellow-light"]} !important;
+            // border: 2px solid ${theme.colors["yellow-light"]} !important;
             box-shadow: 0 0 0 2px ${theme.colors["blue-dark"]};
             border-radius: 5px;
             outline: none;

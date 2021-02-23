@@ -66,6 +66,7 @@ export default {
       fontFamily: "heading",
       p: 0,
       fontSize: 5,
+      lineHeight: 0,
       ":hover": {
         cursor: "pointer",
         filter: "brightness(85%)",

@@ -8,7 +8,7 @@ const QuizProgressBar = ({ questionNumber }) => {
       sx={{
         height: "20px",
         width: "80vw",
-        bg: "white",
+        bg: "purple-light",
         borderRadius: "30px",
         position: "relative",
         mt: 4,
@@ -18,7 +18,7 @@ const QuizProgressBar = ({ questionNumber }) => {
       <Flex
         sx={{
           height: "20px",
-          bg: "yellow",
+          bg: "purple",
           borderRadius: "30px",
           transform: `scaleX(calc(${questionNumber} * 0.1))`,
           transformOrigin: "top left",
@@ -28,22 +28,7 @@ const QuizProgressBar = ({ questionNumber }) => {
           height: "100%",
           position: "absolute",
         }}
-      >
-        <Flex
-          sx={{
-            height: "100%",
-            bg: "yellow",
-            borderRadius: "50%",
-            transform: `scaleX(2)`,
-            width: "100px",
-            right: "-40px",
-            transition: "2s ease in",
-            transitionProperty: "transform",
-            height: "100%",
-            position: "absolute",
-          }}
-        ></Flex>
-      </Flex>
+      ></Flex>
     </Flex>
   );
 };

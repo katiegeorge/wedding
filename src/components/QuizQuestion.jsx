@@ -63,8 +63,8 @@ const QuizQuestion = ({
         gap={6}
         sx={{ mt: 4, textAlign: "center", gridRowGap: 4, mb: 4 }}
       >
-        <p sx={{ fontSize: 5 }}>{firstQ}</p>
-        <p sx={{ fontSize: 5 }}>{secondQ}</p>
+        <p sx={{ fontSize: 4 }}>{firstQ}</p>
+        <p sx={{ fontSize: 4 }}>{secondQ}</p>
         <Flex sx={{ justifyContent: "center" }}>
           <div>
             <Button
@@ -77,7 +77,9 @@ const QuizQuestion = ({
                   (active === "katie-2" && answer === "meg-1")
                     ? (theme) =>
                         `7px solid ${
-                          theme.colors[answer === "meg-1" ? "green" : "pink"]
+                          theme.colors[
+                            answer === "meg-1" ? "green-light" : "pink"
+                          ]
                         }`
                     : "7px solid transparent",
                 borderRadius: "15px",
@@ -104,11 +106,13 @@ const QuizQuestion = ({
                     right: "-10%",
                     top: "-10%",
                     bg: "blue-dark",
-                    p: 2,
+                    p: answer === "meg-1" ? "8px 5px" : 2,
                     borderRadius: "50%",
                     border: (theme) =>
                       `5px solid ${
-                        theme.colors[answer === "meg-1" ? "green" : "pink"]
+                        theme.colors[
+                          answer === "meg-1" ? "green-light" : "pink"
+                        ]
                       }`,
                   }}
                 />
@@ -126,7 +130,9 @@ const QuizQuestion = ({
                   (active === "meg-2" && answer === "katie-1")
                     ? (theme) =>
                         `7px solid ${
-                          theme.colors[answer === "meg-1" ? "pink" : "green"]
+                          theme.colors[
+                            answer === "meg-1" ? "pink" : "green-light"
+                          ]
                         }`
                     : "7px solid transparent",
                 borderRadius: "15px",
@@ -153,11 +159,13 @@ const QuizQuestion = ({
                     right: "-10%",
                     top: "-10%",
                     bg: "blue-dark",
-                    p: 2,
+                    p: answer === "meg-1" ? 2 : "8px 5px",
                     borderRadius: "50%",
                     border: (theme) =>
                       `5px solid ${
-                        theme.colors[answer === "meg-1" ? "pink" : "green"]
+                        theme.colors[
+                          answer === "meg-1" ? "pink" : "green-light"
+                        ]
                       }`,
                   }}
                 />
@@ -179,7 +187,9 @@ const QuizQuestion = ({
                   (active === "katie-1" && answer === "katie-1")
                     ? (theme) =>
                         `7px solid ${
-                          theme.colors[answer === "meg-1" ? "pink" : "green"]
+                          theme.colors[
+                            answer === "meg-1" ? "pink" : "green-light"
+                          ]
                         }`
                     : "7px solid transparent",
                 borderRadius: "15px",
@@ -206,11 +216,13 @@ const QuizQuestion = ({
                     right: "-10%",
                     top: "-10%",
                     bg: "blue-dark",
-                    p: 2,
+                    p: answer === "meg-1" ? 2 : "8px 5px",
                     borderRadius: "50%",
                     border: (theme) =>
                       `5px solid ${
-                        theme.colors[answer === "meg-1" ? "pink" : "green"]
+                        theme.colors[
+                          answer === "meg-1" ? "pink" : "green-light"
+                        ]
                       }`,
                   }}
                 />
@@ -229,7 +241,9 @@ const QuizQuestion = ({
                   (active === "meg-1" && answer === "meg-1")
                     ? (theme) =>
                         `7px solid ${
-                          theme.colors[answer === "meg-1" ? "green" : "pink"]
+                          theme.colors[
+                            answer === "meg-1" ? "green-light" : "pink"
+                          ]
                         }`
                     : "7px solid transparent",
                 borderRadius: "15px",
@@ -256,11 +270,13 @@ const QuizQuestion = ({
                     right: "-10%",
                     top: "-10%",
                     bg: "blue-dark",
-                    p: 2,
+                    p: answer === "meg-1" ? "8px 5px" : 2,
                     borderRadius: "50%",
                     border: (theme) =>
                       `5px solid ${
-                        theme.colors[answer === "meg-1" ? "green" : "pink"]
+                        theme.colors[
+                          answer === "meg-1" ? "green-light" : "pink"
+                        ]
                       }`,
                   }}
                 />
@@ -270,12 +286,24 @@ const QuizQuestion = ({
           </div>
         </Flex>
       </Grid>
-      {getResponse()}
-      {active !== "" && (
-        <Button variant="primary" sx={{ mt: 5 }} onClick={handleClick}>
-          Next
-        </Button>
-      )}
+      <Flex
+        sx={{
+          flexDirection: "column",
+          alignItems: "center",
+          height: "150px",
+        }}
+      >
+        {getResponse()}
+        {active !== "" && (
+          <Button
+            variant="primary"
+            sx={{ mt: 4, width: "fit-content" }}
+            onClick={handleClick}
+          >
+            Next
+          </Button>
+        )}
+      </Flex>
     </Flex>
   );
 };

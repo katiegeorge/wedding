@@ -22,7 +22,7 @@ export default {
     action: `#2a71e1`,
     text: "#000",
     background: "#FCFCFC",
-    "blue-dark": "#004167",
+    "blue-dark": "#0D2D5E",
     "blue-light": "#8FB5F0",
     "gray-light": "#E1E1E1",
     "yellow-light": "#FEF8DC",
@@ -44,6 +44,32 @@ export default {
   images: {
     hero: {
       height: "80%",
+    },
+  },
+  buttons: {
+    primary: {
+      fontFamily: "heading",
+      fontSize: 5,
+      bg: "green-light",
+      color: "blue-dark",
+      borderRadius: "30px",
+      transition: "0.2s ease",
+      px: 3,
+      ":hover": {
+        cursor: "pointer",
+        filter: "brightness(85%)",
+      },
+    },
+    secondary: {
+      color: "yellow",
+      bg: "transparent",
+      fontFamily: "heading",
+      p: 0,
+      fontSize: 5,
+      ":hover": {
+        cursor: "pointer",
+        filter: "brightness(85%)",
+      },
     },
   },
 };

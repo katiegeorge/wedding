@@ -12,6 +12,7 @@ import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
 import ThingsToDo from "../components/ThingsToDo";
 import BridalParty from "../components/BridalParty";
+import Quiz from "../components/Quiz";
 import HamburgerClose from "../components/HamburgerClose";
 
 import MiniLogo from "../images/mini-logo.png";
@@ -85,6 +86,11 @@ const IndexPage = () => {
       href: "bridal-party",
       icon: BridalPartyIcon,
     },
+    {
+      label: "Guess Who?",
+      href: "quiz",
+      icon: BridalPartyIcon,
+    },
   ];
 
   return (
@@ -133,6 +139,7 @@ const IndexPage = () => {
           <ThingsToDo />
           <AboutUs />
           <BridalParty />
+          <Quiz />
         </div>
       </Grid>
     </Layout>

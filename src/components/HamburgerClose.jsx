@@ -16,9 +16,6 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
         cursor: "pointer",
         left: ["80%", "1rem"],
         color: "yellow-light",
-        borderTop: active
-          ? "none"
-          : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
         bg: "transparent",
         borderRadius: 5,
         p: 2,
@@ -56,11 +53,11 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             top: "50%",
             marginTop: "-2px",
             width: "30px",
-            height: active ? "3px" : "4px",
+            height: "3px",
             backgroundColor: "yellow-light",
-            borderTop: active
+            boxShadow: active
               ? "none"
-              : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+              : (theme) => `0 3px ${theme.colors["blue-dark"]}`,
             borderRadius: active ? "5px" : "1px",
             position: "absolute",
             transitionProperty: "transform",
@@ -73,11 +70,11 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
 
             "&::before": {
               width: "30px",
-              height: active ? "3px" : "4px",
+              height: "3px",
               backgroundColor: "yellow-light",
-              borderTop: active
+              boxShadow: active
                 ? "none"
-                : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+                : (theme) => `0 3px ${theme.colors["blue-dark"]}`,
               borderRadius: active ? "5px" : "1px",
               position: "absolute",
               transition: active
@@ -94,11 +91,11 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
 
             "&::after": {
               width: "30px",
-              height: active ? "3px" : "4px",
+              height: "3px",
               backgroundColor: "yellow-light",
-              borderTop: active
+              boxShadow: active
                 ? "none"
-                : (theme) => `2px solid ${theme.colors["blue-dark"]}`,
+                : (theme) => `0 3px ${theme.colors["blue-dark"]}`,
               borderRadius: active ? "5px" : "1px",
               position: "absolute",
               transition: active

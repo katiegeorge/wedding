@@ -43,7 +43,7 @@ const QuizQuestion = ({
       if (active === answer || activeAlt === answer) {
         return "Correct! You know us well!";
       }
-      return "Incorrect. Do you even deserve a spot at our wedding?";
+      return "Nope. Sorry 'bout it.";
     }
     return;
   };
@@ -120,7 +120,9 @@ const QuizQuestion = ({
                 />
               ) : null}
             </Button>
-            <Heading as="h3">Meg</Heading>
+            <Heading as="h3" sx={{ mt: 2 }}>
+              Meg
+            </Heading>
           </div>
           <div>
             <Button
@@ -174,7 +176,9 @@ const QuizQuestion = ({
                 />
               ) : null}
             </Button>
-            <Heading as="h3">Katie</Heading>
+            <Heading as="h3" sx={{ mt: 2 }}>
+              Katie
+            </Heading>
           </div>
         </Flex>
 
@@ -233,7 +237,9 @@ const QuizQuestion = ({
                 />
               ) : null}
             </Button>
-            <Heading as="h3">Meg</Heading>
+            <Heading as="h3" sx={{ mt: 2 }}>
+              Meg
+            </Heading>
           </div>
 
           <div>
@@ -288,7 +294,9 @@ const QuizQuestion = ({
                 />
               ) : null}
             </Button>
-            <Heading as="h3">Katie</Heading>
+            <Heading as="h3" sx={{ mt: 2 }}>
+              Katie
+            </Heading>
           </div>
         </Flex>
       </Grid>

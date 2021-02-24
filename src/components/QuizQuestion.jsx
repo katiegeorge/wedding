@@ -129,7 +129,7 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Checkmark : Error}
                   sx={{
                     position: "absolute",
-                    height: "40px",
+                    height: ["40px", "50px"],
                     right: ["-20%", "-10%"],
                     top: ["-20%", "-10%"],
                     bg: "blue-dark",
@@ -185,7 +185,7 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Error : Checkmark}
                   sx={{
                     position: "absolute",
-                    height: "40px",
+                    height: ["40px", "50px"],
                     right: ["-20%", "-10%"],
                     top: ["-20%", "-10%"],
                     bg: "blue-dark",
@@ -246,7 +246,7 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Error : Checkmark}
                   sx={{
                     position: "absolute",
-                    height: "40px",
+                    height: ["40px", "50px"],
                     right: ["-20%", "-10%"],
                     top: ["-20%", "-10%"],
                     bg: "blue-dark",
@@ -303,7 +303,7 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Checkmark : Error}
                   sx={{
                     position: "absolute",
-                    height: "40px",
+                    height: ["40px", "50px"],
                     right: ["-20%", "-10%"],
                     top: ["-20%", "-10%"],
                     bg: "blue-dark",

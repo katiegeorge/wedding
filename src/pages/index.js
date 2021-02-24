@@ -12,6 +12,7 @@ import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
 import ThingsToDo from "../components/ThingsToDo";
 import BridalParty from "../components/BridalParty";
+import Quiz from "../components/Quiz";
 import HamburgerClose from "../components/HamburgerClose";
 
 import MiniLogo from "../images/mini-logo.png";
@@ -22,6 +23,7 @@ import DetailsIcon from "../images/details-icon.png";
 import WelcomeIcon from "../images/welcome-icon.png";
 import ThingsToDoIcon from "../images/things-to-do-icon.png";
 import BridalPartyIcon from "../images/bridal-party-icon.png";
+import QuizIcon from "../images/quiz-icon.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
@@ -85,6 +87,11 @@ const IndexPage = () => {
       href: "bridal-party",
       icon: BridalPartyIcon,
     },
+    {
+      label: "Guess Who?",
+      href: "quiz",
+      icon: QuizIcon,
+    },
   ];
 
   return (
@@ -133,6 +140,7 @@ const IndexPage = () => {
           <ThingsToDo />
           <AboutUs />
           <BridalParty />
+          <Quiz />
         </div>
       </Grid>
     </Layout>

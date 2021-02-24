@@ -82,7 +82,7 @@ const IndexPage = ({ className }) => {
             June 25, 2022
           </p>
           <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
-            Saltwater Farm
+            Saltwater Farm @ Friday Harbor
           </p>
           <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
             San Juan Island, Washington

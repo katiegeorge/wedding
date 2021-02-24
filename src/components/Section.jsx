@@ -23,7 +23,9 @@ const Section = ({ light, id, heading, children, className }) => {
     >
       <Separator neg={light} />
       <FadeInSection>
-        <Heading as="h1">{heading}</Heading>
+        <Heading as="h1" sx={{ fontSize: [6, 7] }}>
+          {heading}
+        </Heading>
       </FadeInSection>
       <FadeInSection delay>{children}</FadeInSection>
     </Box>

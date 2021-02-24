@@ -85,8 +85,8 @@ const QuizQuestion = ({
       <p sx={{ fontWeight: 200 }}>QUESTION {num}</p>
       <Grid
         columns={[1, 2]}
-        gap={6}
-        sx={{ mt: 4, textAlign: "center", gridRowGap: 4, mb: 4 }}
+        gap={[6]}
+        sx={{ mt: 4, textAlign: "center", gridRowGap: [3, 4], mb: 4 }}
       >
         <p sx={{ fontSize: 4 }}>{firstQ}</p>
         <p sx={{ fontSize: 4, display: ["none", "block"] }}>{secondQ}</p>

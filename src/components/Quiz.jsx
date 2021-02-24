@@ -66,7 +66,7 @@ const Quiz = ({ className }) => {
             </p>
             <Button
               variant="primary"
-              sx={{ my: 5, width: "fit-content" }}
+              sx={{ my: [4, 5], width: "fit-content" }}
               onClick={() => setQuestionNumber(1)}
             >
               Play Now

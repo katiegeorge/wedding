@@ -329,7 +329,7 @@ const QuizQuestion = ({
         sx={{
           flexDirection: "column",
           alignItems: "center",
-          height: "150px",
+          height: ["auto", "150px"],
         }}
       >
         {getResponse()}

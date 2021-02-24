@@ -16,11 +16,10 @@ const QuizQuestion = ({
   answer,
   myAnswers,
   setMyAnswers,
+  blurb,
 }) => {
   const [active, setActive] = useState("");
   const [activeAlt, setActiveAlt] = useState("");
-
-  console.log(active, answer);
 
   const handleClick = () => {
     onClick();
@@ -41,9 +40,35 @@ const QuizQuestion = ({
   const getResponse = () => {
     if (active !== "") {
       if (active === answer || activeAlt === answer) {
-        return "Correct! You know us well!";
+        return (
+          <p sx={{ textAlign: "center" }}>
+            <span
+              sx={{
+                color: "green-light",
+                fontWeight: 600,
+                display: "block",
+              }}
+            >
+              Correct!
+            </span>{" "}
+            {blurb}
+          </p>
+        );
       }
-      return "Nope. Sorry 'bout it.";
+      return (
+        <p sx={{ textAlign: "center" }}>
+          <span
+            sx={{
+              color: "pink",
+              fontWeight: 600,
+              display: "block",
+            }}
+          >
+            Nope.
+          </span>{" "}
+          {blurb}
+        </p>
+      );
     }
     return;
   };

@@ -23,6 +23,7 @@ import DetailsIcon from "../images/details-icon.png";
 import WelcomeIcon from "../images/welcome-icon.png";
 import ThingsToDoIcon from "../images/things-to-do-icon.png";
 import BridalPartyIcon from "../images/bridal-party-icon.png";
+import QuizIcon from "../images/quiz-icon.png";
 
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
@@ -89,7 +90,7 @@ const IndexPage = () => {
     {
       label: "Guess Who?",
       href: "quiz",
-      icon: BridalPartyIcon,
+      icon: QuizIcon,
     },
   ];
 

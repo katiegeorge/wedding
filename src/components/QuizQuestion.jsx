@@ -116,7 +116,7 @@ const QuizQuestion = ({
               <Image
                 src={Meg}
                 sx={{
-                  height: "200px",
+                  height: ["100px", "200px"],
                   objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "meg-1" && active !== "" ? 0.5 : 1,
@@ -129,9 +129,9 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Checkmark : Error}
                   sx={{
                     position: "absolute",
-                    height: "50px",
-                    right: "-10%",
-                    top: "-10%",
+                    height: "40px",
+                    right: ["-20%", "-10%"],
+                    top: ["-20%", "-10%"],
                     bg: "blue-dark",
                     p: answer === "meg-1" ? "8px 5px" : 2,
                     borderRadius: "50%",
@@ -172,7 +172,7 @@ const QuizQuestion = ({
               <Image
                 src={Katie}
                 sx={{
-                  height: "200px",
+                  height: ["100px", "200px"],
                   objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "katie-1" && active !== "" ? 0.5 : 1,
@@ -185,9 +185,9 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Error : Checkmark}
                   sx={{
                     position: "absolute",
-                    height: "50px",
-                    right: "-10%",
-                    top: "-10%",
+                    height: "40px",
+                    right: ["-20%", "-10%"],
+                    top: ["-20%", "-10%"],
                     bg: "blue-dark",
                     p: answer === "meg-1" ? 2 : "8px 5px",
                     borderRadius: "50%",
@@ -233,7 +233,7 @@ const QuizQuestion = ({
               <Image
                 src={Meg}
                 sx={{
-                  height: "200px",
+                  height: ["100px", "200px"],
                   objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "katie-1" && active !== "" ? 0.5 : 1,
@@ -246,9 +246,9 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Error : Checkmark}
                   sx={{
                     position: "absolute",
-                    height: "50px",
-                    right: "-10%",
-                    top: "-10%",
+                    height: "40px",
+                    right: ["-20%", "-10%"],
+                    top: ["-20%", "-10%"],
                     bg: "blue-dark",
                     p: answer === "meg-1" ? 2 : "8px 5px",
                     borderRadius: "50%",
@@ -290,7 +290,7 @@ const QuizQuestion = ({
               <Image
                 src={Katie}
                 sx={{
-                  height: "200px",
+                  height: ["100px", "200px"],
                   objectFit: "cover",
                   borderRadius: "8px",
                   opacity: answer !== "meg-1" && active !== "" ? 0.5 : 1,
@@ -303,9 +303,9 @@ const QuizQuestion = ({
                   src={answer === "meg-1" ? Checkmark : Error}
                   sx={{
                     position: "absolute",
-                    height: "50px",
-                    right: "-10%",
-                    top: "-10%",
+                    height: "40px",
+                    right: ["-20%", "-10%"],
+                    top: ["-20%", "-10%"],
                     bg: "blue-dark",
                     p: answer === "meg-1" ? "8px 5px" : 2,
                     borderRadius: "50%",

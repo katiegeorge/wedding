@@ -133,14 +133,16 @@ const IndexPage = () => {
             active={showSideBar}
             sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
-          <Landing />
-          <Welcome />
-          <Details />
-          <GettingHere />
-          <ThingsToDo />
-          <AboutUs />
-          <BridalParty />
-          <Quiz />
+          <div sx={{ filter: showSideBar ? "brightness(50%)" : "none" }}>
+            <Landing />
+            <Welcome />
+            <Details />
+            <GettingHere />
+            <ThingsToDo />
+            <AboutUs />
+            <BridalParty />
+            <Quiz />
+          </div>
         </div>
       </Grid>
     </Layout>

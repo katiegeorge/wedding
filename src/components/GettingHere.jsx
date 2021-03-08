@@ -41,7 +41,7 @@ const GettingHere = ({ className }) => {
 
   return (
     <Section heading="Getting Here" id="getting-here" className={className}>
-      <Flex>
+      <Flex sx={{ display: ["block", "flex"], mb: [6, 0] }}>
         <div sx={{ flex: 3 }}>
           <p sx={{ my: 5 }}>
             If you are traveling to the San Juan Islands from outside the
@@ -66,7 +66,7 @@ const GettingHere = ({ className }) => {
           <Image
             src={Clouds}
             sx={{
-              mt: 4,
+              mt: [0, 4],
               width: "180px",
               objectFit: "contain",
               position: "absolute",
@@ -74,7 +74,13 @@ const GettingHere = ({ className }) => {
           />
         </Flex>
       </Flex>
-      <Flex sx={{ alignItems: "flex-start" }}>
+      <Flex
+        sx={{
+          alignItems: "flex-start",
+          display: ["block", "flex"],
+          mb: [6, 0],
+        }}
+      >
         <div sx={{ flex: 3 }}>
           <Heading sx={{ mb: 3 }}>Washington State Ferries</Heading>
           <p sx={{ mb: 3 }}>
@@ -143,7 +149,13 @@ const GettingHere = ({ className }) => {
         </Flex>
       </Flex>
 
-      <Flex sx={{ alignItems: "flex-start" }}>
+      <Flex
+        sx={{
+          alignItems: "flex-start",
+          display: ["block", "flex"],
+          mb: [6, 0],
+        }}
+      >
         <div sx={{ flex: 3 }}>
           <Heading sx={{ mb: 3 }}>Land or Sea Planes</Heading>
           <p sx={{ mb: 5 }}>
@@ -191,7 +203,13 @@ const GettingHere = ({ className }) => {
         </Flex>
       </Flex>
 
-      <Flex sx={{ alignItems: "flex-start" }}>
+      <Flex
+        sx={{
+          alignItems: "flex-start",
+          display: ["block", "flex"],
+          mb: [6, 0],
+        }}
+      >
         <div sx={{ flex: 3 }}>
           <Heading sx={{ mb: 3 }}>On-Island Transportation</Heading>
           <p sx={{ mb: 3 }}>

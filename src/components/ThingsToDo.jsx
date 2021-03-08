@@ -1,8 +1,7 @@
 /** @jsx jsx */
 
-import { jsx, Image, Flex } from "theme-ui";
+import { jsx, Flex } from "theme-ui";
 import Section from "./Section";
-import Boat from "../images/boat.png";
 
 const ThingsToDo = ({ className }) => {
   return (

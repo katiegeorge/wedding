@@ -215,7 +215,9 @@ const GettingHere = ({ className }) => {
           <p sx={{ mb: 3 }}>
             If you fly to the islands or choose to park your car at the
             Anacortes Ferry Terminal, there are several ways to get around the
-            island. Check out the links below for more information:
+            island. Check out the links below for more information (NOTE: there
+            is NOT Uber or Lyft on the island, so you will have to use one of
+            the alternative services instead.):
           </p>
           <Flex sx={{ flexDirection: "column" }}>
             <Anchor href="https://www.fridayharborjollytrolley.com/">

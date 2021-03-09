@@ -179,7 +179,11 @@ const GettingHere = ({ className }) => {
           </p>
         </div>
         <Flex
-          sx={{ justifyContent: "center", flex: "1", position: "relative" }}
+          sx={{
+            justifyContent: "center",
+            flex: "1",
+            position: "relative",
+          }}
         >
           <Image
             src={Seaplane}
@@ -188,6 +192,8 @@ const GettingHere = ({ className }) => {
               mt: 5,
               width: "200px",
               objectFit: "contain",
+              position: ["static", "absolute"],
+              left: "40px",
             }}
           />
           <Image
@@ -254,7 +260,12 @@ const GettingHere = ({ className }) => {
         >
           <Image
             src={Car}
-            sx={{ animation: `${rumble} 1s ease-in-out infinite`, mt: 4 }}
+            sx={{
+              animation: `${rumble} 1s ease-in-out infinite`,
+              mt: 4,
+              position: "absolute",
+              left: "65px",
+            }}
           />
           <Image
             src={Wheel}
@@ -287,6 +298,7 @@ const GettingHere = ({ className }) => {
               objectFit: "contain",
               position: "absolute",
               top: "125px",
+              left: "30px",
             }}
           />
         </Flex>

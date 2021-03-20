@@ -5,12 +5,7 @@ import Section from "./Section";
 
 const ThingsToDo = ({ className }) => {
   return (
-    <Section
-      heading="Things To Do"
-      id="things-to-do"
-      light
-      className={className}
-    >
+    <Section heading="Things To Do" id="things-to-do" className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>

@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Details from "../components/Details";
 import Landing from "../components/Landing";
 import GettingHere from "../components/GettingHere";
+import Lodging from "../components/Lodging";
 import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
@@ -71,6 +72,11 @@ const IndexPage = () => {
       label: "Getting Here",
       href: "getting-here",
       icon: GettingHereIcon,
+    },
+    {
+      label: "Lodging",
+      href: "lodging",
+      icon: HomeIcon,
     },
     {
       label: "Things To Do",
@@ -138,6 +144,7 @@ const IndexPage = () => {
             <Welcome />
             <Details />
             <GettingHere />
+            <Lodging />
             <ThingsToDo />
             <AboutUs />
             <BridalParty />

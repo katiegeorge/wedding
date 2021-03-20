@@ -6,7 +6,7 @@ import Boat from "../images/boat.png";
 
 const AboutUs = ({ className }) => {
   return (
-    <Section heading="About Us" id="about-us" className={className}>
+    <Section light heading="About Us" id="about-us" className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>

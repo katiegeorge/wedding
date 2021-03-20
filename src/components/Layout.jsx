@@ -58,10 +58,12 @@ const Layout = ({ children, className }) => {
             font: 1.25em/${theme.lineHeights.body} ${theme.fonts.body};
             font-weight: 300;
             font-size: 16pt;
+            letter-spacing: 0.5px;
           }
 
           p {
             max-width: 75ch;
+            letter-spacing: 0.5px;
           }
 
           h1 {

@@ -48,7 +48,7 @@ const Quiz = ({ className }) => {
   };
 
   return (
-    <Section heading="Guess Who?" id="quiz" className={className}>
+    <Section light heading="Guess Who?" id="quiz" className={className}>
       <Flex
         sx={{
           alignItems: "center",

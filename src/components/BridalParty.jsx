@@ -37,12 +37,7 @@ const BridalParty = ({ className }) => {
   ];
 
   return (
-    <Section
-      heading="Bridal Party"
-      id="bridal-party"
-      light
-      className={className}
-    >
+    <Section heading="Bridal Party" id="bridal-party" className={className}>
       <Fragment>
         <p sx={{ mt: 4 }}>
           Meet the people we can't imagine our wedding without!

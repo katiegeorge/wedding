@@ -56,7 +56,7 @@ const IndexPage = () => {
     {
       label: "Home",
       href: "home",
-      icon: HomeIcon,
+      icon: MiniLogo,
     },
     {
       label: "Welcome",

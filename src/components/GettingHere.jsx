@@ -82,7 +82,9 @@ const GettingHere = ({ className }) => {
         }}
       >
         <div sx={{ flex: 3 }}>
-          <Heading sx={{ mb: 3 }}>Washington State Ferries</Heading>
+          <Heading sx={{ mb: 3, fontFamily: "body", fontWeight: "700" }}>
+            Washington State Ferries
+          </Heading>
           <p sx={{ mb: 3 }}>
             This is the most affordable way to travel to the islands. Ferries to
             the San Juan Islands depart from Anacortes, which is a 2-2.5 hour
@@ -157,7 +159,9 @@ const GettingHere = ({ className }) => {
         }}
       >
         <div sx={{ flex: 3 }}>
-          <Heading sx={{ mb: 3 }}>Land or Sea Planes</Heading>
+          <Heading sx={{ mb: 3, fontFamily: "body", fontWeight: "700" }}>
+            Land or Sea Planes
+          </Heading>
           <p sx={{ mb: 5 }}>
             There are several regional airlines that fly from the Seattle area
             to the San Juan Islands. This is the fastest option for travel to
@@ -217,7 +221,9 @@ const GettingHere = ({ className }) => {
         }}
       >
         <div sx={{ flex: 3 }}>
-          <Heading sx={{ mb: 3 }}>On-Island Transportation</Heading>
+          <Heading sx={{ mb: 3, fontFamily: "body", fontWeight: "700" }}>
+            On-Island Transportation
+          </Heading>
           <p sx={{ mb: 3 }}>
             If you fly to the islands or choose to park your car at the
             Anacortes Ferry Terminal, there are several ways to get around the

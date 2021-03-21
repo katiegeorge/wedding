@@ -33,24 +33,24 @@ const IndexPage = () => {
 
   const wndw = typeof window !== "undefined" && window;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = wndw.pageYOffset;
-      const vsble =
-        prevScrollPos > currentScrollPos ||
-        currentScrollPos < 50 ||
-        showSideBar;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = wndw.pageYOffset;
+  //     const vsble =
+  //       prevScrollPos > currentScrollPos ||
+  //       currentScrollPos < 50 ||
+  //       showSideBar;
 
-      setPrevScrollPos(currentScrollPos);
-      setVisible(vsble);
-    };
+  //     setPrevScrollPos(currentScrollPos);
+  //     setVisible(vsble);
+  //   };
 
-    wndw.addEventListener("scroll", handleScroll);
+  //   wndw.addEventListener("scroll", handleScroll);
 
-    return () => {
-      wndw.removeEventListener("scroll", handleScroll);
-    };
-  }, [wndw.pageYOffset]);
+  //   return () => {
+  //     wndw.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [wndw.pageYOffset]);
 
   const items = [
     {

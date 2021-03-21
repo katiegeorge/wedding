@@ -26,13 +26,15 @@ const FadeInSection = ({ children, delay }) => {
   return (
     <div
       ref={domRef}
-      sx={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "none" : "translateY(5vh)",
-        transition: "opacity 0.6s ease-out, transform 1.2s ease-out",
-        transitionDelay: delay ? "0.5s" : "0",
-        willChange: "opacity, visibility",
-      }}
+      sx={
+        {
+          // opacity: isVisible ? 1 : 0,
+          // transform: isVisible ? "none" : "translateY(5vh)",
+          // transition: "opacity 0.6s ease-out, transform 1.2s ease-out",
+          // transitionDelay: delay ? "0.5s" : "0",
+          // willChange: "opacity, visibility",
+        }
+      }
     >
       {children}
     </div>

@@ -1,15 +1,16 @@
 /** @jsx jsx */
 
-import { jsx, Heading, Image, Flex, Grid } from "theme-ui";
-import FHH from "../images/friday-harbor-house.jpeg";
-import FHS from "../images/FHS.jpeg";
-import Earthbox from "../images/earthbox.jpeg";
-import IslandInn from "../images/island-inn.jpeg";
-import Juniper from "../images/juniper-lane.jpeg";
-import Lakedale from "../images/lakedale-resort.jpeg";
-import TuckerHouse from "../images/tucker-house.jpeg";
-import SpringTree from "../images/springtree-suite.jpeg";
-import Discovery from "../images/discovery-inn.jpeg";
+import { jsx, Heading, Flex, Grid, Image } from "theme-ui";
+import { StaticImage } from "gatsby-plugin-image";
+import FHH from "../images/lodging/friday-harbor-house.png";
+import FHS from "../images/lodging/FHS.png";
+import Earthbox from "../images/lodging/earthbox.png";
+import IslandInn from "../images/lodging/island-inn.png";
+import Juniper from "../images/lodging/juniper-lane.png";
+import Lakedale from "../images/lodging/lakedale-resort.png";
+import TuckerHouse from "../images/lodging/tucker-house.png";
+import SpringTree from "../images/lodging/springtree-suite.png";
+import Discovery from "../images/lodging/discovery-inn.png";
 import Section from "./Section";
 import Anchor from "./Anchor";
 
@@ -93,6 +94,7 @@ const Lodging = ({ className }) => {
     return (
       <Flex sx={{ flexDirection: "column" }}>
         <Image sx={{ my: 3 }} src={props.src} alt={props.label} />
+        {/* <div sx={{ width: "300px", height: "300px", background: "gray" }} /> */}
         <Heading as="h3" sx={{ fontFamily: "body", fontSize: "18pt" }}>
           {props.label}
         </Heading>

@@ -11,7 +11,7 @@ const Details = ({ className }) => {
           flexDirection: "column",
         }}
       >
-        <Grid columns={[1, 3]} sx={{ mt: 5 }}>
+        <Grid columns={[1, 3]} gap="5" sx={{ mt: 5 }}>
           <Box>
             <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
               Friday, June 24, 2022

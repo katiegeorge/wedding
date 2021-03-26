@@ -1,10 +1,18 @@
 /** @jsx jsx */
 
-import { jsx, Image, Flex } from "theme-ui";
+import { jsx, Image, Flex, Text } from "theme-ui";
 import Section from "./Section";
 import Smiley from "../images/smiley-bw.png";
+import SpotifyPlayer from "react-spotify-player";
 
 const Welcome = ({ className }) => {
+  // size may also be a plain string using the presets 'large' or 'compact'
+  const size = {
+    width: "100%",
+    height: 400,
+  };
+  const view = "list"; // or 'coverart'
+  const theme = "black"; // or 'white'
   return (
     <Section heading="Welcome!" id="welcome" className={className}>
       <Flex sx={{ display: ["block", "flex"] }}>
@@ -29,19 +37,35 @@ const Welcome = ({ className }) => {
             night away with all of our favorite people!
           </p>
         </div>
-        <Image
-          src={Smiley}
-          sx={{
-            flex: 1,
-            objectFit: "contain",
-            mt: [4, 0],
-            position: ["static", "absolute"],
-            right: "64px",
-            height: "400px",
-            bottom: "42px",
-            mb: ["-132px", 0],
-          }}
-        />
+        <div sx={{ flex: 1, mb: [0, "340px"] }}>
+          <Flex sx={{ alignItems: "flex-end" }}>
+            <Text sx={{ fontSize: 2, mb: 1, mt: [3, 0] }}>
+              Listen to our favorite jams while you browse!
+            </Text>
+            <Image
+              src="https://media1.giphy.com/media/5th7gvNFk2gfQc5fmo/200.gif?cid=ecf05e47mk6uvsl6rhsnt5l1fxze3mihbzxe5e1aitv6jybi&rid=200.gif"
+              sx={{ height: "40px" }}
+            />
+          </Flex>
+          <SpotifyPlayer
+            uri="spotify:playlist:5tfjm66pxcqF2g2Z0ySqSr"
+            size={size}
+            view={view}
+            theme={theme}
+          />
+          <Image
+            src={Smiley}
+            sx={{
+              objectFit: "contain",
+              mt: [4, 0],
+              position: ["static", "absolute"],
+              left: "200px",
+              height: "200px",
+              bottom: "0px",
+              mb: ["-132px", 0],
+            }}
+          />
+        </div>
       </Flex>
     </Section>
   );

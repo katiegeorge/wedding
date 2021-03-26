@@ -28,7 +28,7 @@ const Details = ({ className }) => {
               Attire: Casual
             </em>
           </Box>
-          <Box>
+          <Box sx={{ mt: [5, 0] }}>
             <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
               Saturday, June 25, 2022
             </Heading>
@@ -44,7 +44,7 @@ const Details = ({ className }) => {
               Attire: Dressy Casual
             </em>
           </Box>
-          <Box>
+          <Box sx={{ mt: [5, 0] }}>
             <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
               Sunday, June 26, 2022
             </Heading>

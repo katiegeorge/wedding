@@ -1,6 +1,10 @@
 /** @jsx jsx */
 
-import { jsx, Flex } from "theme-ui";
+import { jsx, Flex, Image } from "theme-ui";
+import Brewery from "../images/brewery.jpg";
+import Hiking from "../images/hiking.jpg";
+import Hiking2 from "../images/hiking-2.jpg";
+import Kayaking from "../images/kayaking.jpg";
 import Section from "./Section";
 
 const ThingsToDo = ({ className }) => {
@@ -31,7 +35,52 @@ const ThingsToDo = ({ className }) => {
           </p>
         </div>
 
-        <div sx={{ flex: 1 }} />
+        <div
+          sx={{
+            flex: 1,
+            position: "relative",
+            display: ["flex", "block"],
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src={Brewery}
+            sx={{
+              position: ["static", "absolute"],
+              display: "block",
+              mt: 3,
+              borderRadius: "5px",
+              width: ["50%", "50%"],
+              top: 0,
+              left: 0,
+            }}
+          />
+          <Image
+            src={Hiking2}
+            sx={{
+              position: ["static", "absolute"],
+              display: "block",
+              mt: 3,
+              borderRadius: "5px",
+              width: ["50%", "50%"],
+              left: "66%",
+              top: "33%",
+            }}
+          />
+          <Image
+            src={Kayaking}
+            sx={{
+              position: ["static", "absolute"],
+              display: "block",
+              mt: 3,
+              borderRadius: "5px",
+              width: ["50%", "55%"],
+              top: "66%",
+              left: 0,
+            }}
+          />
+        </div>
       </Flex>
     </Section>
   );

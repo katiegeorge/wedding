@@ -37,7 +37,7 @@ const Welcome = ({ className }) => {
             night away with all of our favorite people!
           </p>
         </div>
-        <div sx={{ flex: 1, mb: [0, "100px"] }}>
+        <div sx={{ flex: 1, mb: [0, "150px"], mt: 4 }}>
           <Flex sx={{ alignItems: "flex-end" }}>
             <Text sx={{ fontSize: 2, mb: 1, mt: [3, 0] }}>
               Listen to our favorite jams while you browse!
@@ -60,7 +60,7 @@ const Welcome = ({ className }) => {
               mt: [4, 0],
               position: ["static", "absolute"],
               left: "200px",
-              height: "200px",
+              height: "250px",
               bottom: "0px",
               mb: ["-132px", 0],
             }}

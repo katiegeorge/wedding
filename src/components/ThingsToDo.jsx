@@ -51,7 +51,7 @@ const ThingsToDo = ({ className }) => {
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["50%", "50%"],
+              width: ["70%", "50%"],
               top: 0,
               left: 0,
             }}
@@ -63,7 +63,7 @@ const ThingsToDo = ({ className }) => {
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["50%", "50%"],
+              width: ["70%", "50%"],
               left: "66%",
               top: "33%",
             }}
@@ -75,7 +75,7 @@ const ThingsToDo = ({ className }) => {
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["50%", "55%"],
+              width: ["70%", "55%"],
               top: "66%",
               left: 0,
             }}

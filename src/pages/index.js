@@ -26,6 +26,17 @@ import ThingsToDoIcon from "../images/things-to-do-icon.png";
 import BridalPartyIcon from "../images/bridal-party-icon.png";
 import QuizIcon from "../images/quiz-icon.png";
 
+function Footer() {
+  return (
+    <Flex
+      sx={{ p: 4, bg: "blue-dark", color: "yellow-light", fontSize: "10pt" }}
+    >
+      © 2021 Katie George and Meg Delaney <br />
+      Handcrafted during late nights over glasses of wine
+    </Flex>
+  );
+}
+
 const IndexPage = () => {
   const [prevScrollPos, setPrevScrollPos] = useState("");
   const [visible, setVisible] = useState(true);
@@ -149,6 +160,7 @@ const IndexPage = () => {
             <AboutUs />
             <BridalParty />
             <Quiz />
+            <Footer />
           </div>
         </div>
       </Grid>

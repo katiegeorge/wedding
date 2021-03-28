@@ -123,7 +123,7 @@ const IndexPage = () => {
           <Flex
             sx={{
               width: "100%",
-              height: "75px",
+              height: "60px",
               position: "fixed",
               top: visible ? "0" : "-100px",
               zIndex: 1,
@@ -136,7 +136,7 @@ const IndexPage = () => {
             }}
           >
             <a href="#home">
-              <Image src={MiniLogo} sx={{ height: "37px", mt: "18px" }} />
+              <Image src={MiniLogo} sx={{ height: "30px", mt: "15px" }} />
             </a>
             <HamburgerClose
               handleClick={() => setShowSideBar(!showSideBar)}

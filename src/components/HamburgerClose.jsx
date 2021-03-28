@@ -41,7 +41,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
     >
       <div
         sx={{
-          width: "30px",
+          width: "25px",
           height: "24px",
           display: "inline-block",
           position: "relative",
@@ -52,7 +52,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             display: "block",
             top: "50%",
             marginTop: "-2px",
-            width: "30px",
+            width: "25px",
             height: "3px",
             backgroundColor: "yellow-light",
             boxShadow: active
@@ -69,7 +69,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
             transitionDelay: active && "0.12s",
 
             "&::before": {
-              width: "30px",
+              width: "25px",
               height: "3px",
               backgroundColor: "yellow-light",
               boxShadow: active
@@ -85,12 +85,12 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
                 : "opacity 0.1s ease-in",
               content: '""',
               display: "block",
-              top: active ? 0 : "-10px",
+              top: active ? 0 : "-9px",
               opacity: active && 0,
             },
 
             "&::after": {
-              width: "30px",
+              width: "25px",
               height: "3px",
               backgroundColor: "yellow-light",
               boxShadow: active
@@ -106,7 +106,7 @@ const HamburgerClose = ({ handleClick, active, setActive, className }) => {
                 : "transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19)",
               content: '""',
               display: "block",
-              bottom: active ? 0 : "-10px",
+              bottom: active ? 0 : "-9px",
               transform: active && "rotate(-90deg)",
             },
           }}

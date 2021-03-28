@@ -57,7 +57,7 @@ const Layout = ({ children, className }) => {
           body {
             font: 1.25em/${theme.lineHeights.body} ${theme.fonts.body};
             font-weight: 300;
-            font-size: 16pt;
+            font-size: 14pt;
             letter-spacing: 0.5px;
           }
 
@@ -67,7 +67,7 @@ const Layout = ({ children, className }) => {
           }
 
           h1 {
-            font-size: 4rem;
+            font-size: 3rem;
           }
 
         `}

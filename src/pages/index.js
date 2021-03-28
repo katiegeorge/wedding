@@ -32,7 +32,7 @@ function Footer() {
       sx={{ p: 4, bg: "blue-dark", color: "yellow-light", fontSize: "10pt" }}
     >
       © 2021 Katie George and Meg Delaney <br />
-      Handcrafted during late nights over glasses of wine
+      Handcrafted during late nights over several glasses of wine
     </Flex>
   );
 }

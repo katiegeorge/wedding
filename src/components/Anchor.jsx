@@ -14,7 +14,7 @@ const Anchor = ({ href, children }) => {
         textDecoration: "none",
         mb: 3,
         px: 1,
-        fontSize: ["11pt", "12pt"],
+        fontSize: ["12pt", "14pt"],
         width: "fit-content",
         fontWeight: "400",
         ":hover": {

@@ -10,7 +10,7 @@ import Section from "./Section";
 const Details = ({ className }) => {
   return (
     <Section heading="Details" id="details" light className={className}>
-      <ReactTooltip multiline />
+      <ReactTooltip multiline backgroundColor="#0D2D5E" />
       <Flex
         sx={{
           flexDirection: "column",

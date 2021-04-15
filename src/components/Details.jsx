@@ -49,7 +49,7 @@ const Details = ({ className }) => {
             </p>
             <em sx={{ fontSize: "19px", mt: 3, display: "block" }}>
               Attire: Dressy Casual{" "}
-              <span data-tip="What the heck is Dressy Casual??? <br /><br /><br />Dressy casual is in between jeans and formal.<br /> Think, a long summer dress or chinos and a button down.">
+              <span data-tip="What the heck is Dressy Casual??? <br /><br /><br />Dressy casual is somewhere between jeans and formal.<br /> Think, a long summer dress or chinos and a button down.">
                 [?]
               </span>
             </em>

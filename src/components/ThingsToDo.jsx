@@ -10,7 +10,7 @@ import Section from "./Section";
 const ThingsToDo = ({ className }) => {
   return (
     <Section heading="Things To Do" id="things-to-do" className={className}>
-      <Flex sx={{ display: ["block", "flex"] }}>
+      <Flex sx={{ display: ["block", "block", "flex"] }}>
         <div sx={{ flex: 2, mr: [0, 5] }}>
           <p sx={{ mt: 4 }}>
             <strong>Seattle</strong>
@@ -39,7 +39,7 @@ const ThingsToDo = ({ className }) => {
           sx={{
             flex: 1,
             position: "relative",
-            display: ["flex", "block"],
+            display: ["flex", "flex", "block"],
             flexDirection: "column",
             alignItems: "center",
           }}
@@ -47,11 +47,11 @@ const ThingsToDo = ({ className }) => {
           <Image
             src={Brewery}
             sx={{
-              position: ["static", "absolute"],
+              position: ["static", "static", "absolute"],
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["70%", "50%"],
+              width: ["70%", "70%", "50%", "40%"],
               top: 0,
               left: 0,
             }}
@@ -59,11 +59,11 @@ const ThingsToDo = ({ className }) => {
           <Image
             src={Hiking2}
             sx={{
-              position: ["static", "absolute"],
+              position: ["static", "static", "absolute"],
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["70%", "50%"],
+              width: ["70%", "70%", "50%", "40%"],
               left: "66%",
               top: "33%",
             }}
@@ -71,11 +71,11 @@ const ThingsToDo = ({ className }) => {
           <Image
             src={Kayaking}
             sx={{
-              position: ["static", "absolute"],
+              position: ["static", "static", "absolute"],
               display: "block",
               mt: 3,
               borderRadius: "5px",
-              width: ["70%", "55%"],
+              width: ["70%", "70%", "55%", "40%"],
               top: "66%",
               left: 0,
             }}

@@ -14,7 +14,7 @@ const AboutUs = ({ className }) => {
             we met on a dating app. After the initial small talk messages about
             Seattle weather, mutual friends from Northwestern, and the 2018
             Winter Olympics (we really bonded over the excitement of the US
-            curling team), Katie made the bold movie to ask Meg out on a date.
+            curling team), Katie made the bold move to ask Meg out on a date.
             And Meg asked for a raincheck. Despite Katie’s fear that she was
             being ghosted, Meg was actually on a ski vacation in Utah with her
             family. As soon as Meg was back in Seattle, we met for a beer at

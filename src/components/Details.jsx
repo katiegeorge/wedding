@@ -1,19 +1,25 @@
 /** @jsx jsx */
 
-import { jsx, Heading, Flex, Grid, Box } from "theme-ui";
+import { jsx, Heading, Flex, Grid, Box, Image } from "theme-ui";
+import ReactTooltip from "react-tooltip";
+import Drinks from "../images/drinks.png";
+import Cake from "../images/wedding-cake.png";
+import Coffee from "../images/coffee.png";
 import Section from "./Section";
 
 const Details = ({ className }) => {
   return (
     <Section heading="Details" id="details" light className={className}>
+      <ReactTooltip multiline />
       <Flex
         sx={{
           flexDirection: "column",
         }}
       >
         <Grid columns={[1, 3]} gap="5" sx={{ mt: 5 }}>
-          <Box>
-            <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
+          <Box sx={{ textAlign: "center" }}>
+            <Image sx={{ height: "100px" }} src={Drinks} />
+            <Heading sx={{ fontSize: "24px", my: 3 }} as="h3">
               Friday, June 24, 2022
             </Heading>
             <strong sx={{ display: "block" }}>Welcome Drinks</strong>
@@ -28,8 +34,9 @@ const Details = ({ className }) => {
               Attire: Casual
             </em>
           </Box>
-          <Box sx={{ mt: [5, 0] }}>
-            <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
+          <Box sx={{ mt: [5, 0], textAlign: "center" }}>
+            <Image sx={{ height: "100px" }} src={Cake} />
+            <Heading sx={{ fontSize: "24px", my: 3 }} as="h3">
               Saturday, June 25, 2022
             </Heading>
             <strong sx={{ display: "block" }}>Ceremony &#38; Reception </strong>
@@ -41,11 +48,15 @@ const Details = ({ className }) => {
               then move to the barn for dinner, drinks, and dancing.
             </p>
             <em sx={{ fontSize: "19px", mt: 3, display: "block" }}>
-              Attire: Dressy Casual
+              Attire: Dressy Casual{" "}
+              <span data-tip="What the heck is Dressy Casual??? <br /><br /><br />Dressy casual is in between jeans and formal.<br /> Think, a long summer dress or chinos and a button down.">
+                [?]
+              </span>
             </em>
           </Box>
-          <Box sx={{ mt: [5, 0] }}>
-            <Heading sx={{ fontSize: "24px", mb: 3 }} as="h3">
+          <Box sx={{ mt: [5, 0], textAlign: "center" }}>
+            <Image sx={{ height: "100px" }} src={Coffee} />
+            <Heading sx={{ fontSize: "24px", my: 3 }} as="h3">
               Sunday, June 26, 2022
             </Heading>
             <strong sx={{ display: "block" }}>Brunch</strong>

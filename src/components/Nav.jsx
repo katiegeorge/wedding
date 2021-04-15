@@ -18,7 +18,7 @@ const Nav = ({ items, className, setShowSideBar }) => {
         left: [0, "auto"],
         right: [0, "auto"],
         bg: "blue-dark",
-        width: ["100%", "20%"],
+        width: ["100%", "30%", "20%"],
         zIndex: 1,
         boxShadow: "3px 0 4px 0px #09283a",
       }}
@@ -58,6 +58,9 @@ const Nav = ({ items, className, setShowSideBar }) => {
               </a>
             </li>
           ))}
+          <li sx={{ mt: 3 }}>
+            <em sx={{ fontSize: "11pt" }}>RSVP & Registry coming soon!</em>
+          </li>
         </ul>
       </Fragment>
     </nav>

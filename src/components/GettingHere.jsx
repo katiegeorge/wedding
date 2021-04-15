@@ -90,14 +90,17 @@ const GettingHere = ({ className }) => {
             the San Juan Islands depart from Anacortes, which is a 2-2.5 hour
             drive north of SeaTac airport. When you fly into the Seattle area,
             you can rent a car (from either airport) or take a shuttle north to
-            Anacortes (from SeaTac airport only). Shuttle options include the{" "}
+            Anacortes (from SeaTac airport only). When you are driving a car
+            onto the ferry, you should arrive at least 45-60 minutes early in
+            order to be fully checked in 30 minutes prior to sailing. If you
+            miss the 30 minute cutoff, you will lose your reservation and be
+            grouped in with the standby cars (aka you may wait for hours to get
+            on/off island). Shuttle options include the{" "}
             <Anchor href="https://airporter.com/">
               Bellair Airporter Shuttle
             </Anchor>{" "}
             and the{" "}
-            <Anchor href="https://islandairporter.com/index.html">
-              Island Airporter
-            </Anchor>
+            <Anchor href="https://islandairporter.com">Island Airporter</Anchor>
             .
           </p>
           <p sx={{ mb: 3 }}>
@@ -177,7 +180,10 @@ const GettingHere = ({ className }) => {
               San Juan Airlines
             </Anchor>{" "}
             (the only option from Paine Field airport in Everett),{" "}
-            <Anchor href="Point to Point Air">Point to Point Air</Anchor>, or{" "}
+            <Anchor href="https://www.point2pointair.com/">
+              Point to Point Air
+            </Anchor>
+            , or{" "}
             <Anchor href="http://www.westwindav.com/">Westwind Aviation</Anchor>{" "}
             to book your flights.
           </p>

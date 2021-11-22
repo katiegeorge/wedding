@@ -87,7 +87,7 @@ const GettingHere = ({ className }) => {
           </Heading>
           <p sx={{ mb: 3 }}>
             This is the most affordable way to travel to the islands. Ferries to
-            the San Juan Islands depart from Anacortes, which is a 2-2.5 hour
+            the San Juan Islands depart from Anacortes, which is about a 2 hour
             drive north of SeaTac airport. When you fly into the Seattle area,
             you can rent a car (from either airport) or take a shuttle north to
             Anacortes (from SeaTac airport only). When you are driving a car

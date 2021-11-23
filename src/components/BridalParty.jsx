@@ -165,7 +165,7 @@ const BridalParty = ({ className }) => {
     return (
       <div
         sx={{
-          p: 4,
+          p: [3, 4],
           background: "#1F3E6D",
           borderRadius: '8px',
           boxShadow: '3px 3px 2px #071934',
@@ -188,10 +188,11 @@ const BridalParty = ({ className }) => {
               mr: 3,
               height: showDescription.includes(index) ? "100px" : "150px",
               transition: '1s ease',
+              objectFit: 'contain',
             }}
           />
           <div>
-            <Heading sx={{ color: fontColor, fontSize: showDescription.includes(index) ? 4 : 5, transition: '1s ease', }}>{person && person.name}</Heading>
+            <Heading sx={{ color: fontColor, fontSize: showDescription.includes(index) ? [3, 4] : [4, 5], transition: '1s ease', }}>{person && person.name}</Heading>
             <p>{person && person.title}</p>
           </div>
         </Flex>
@@ -210,7 +211,7 @@ const BridalParty = ({ className }) => {
   }
 
   return (
-    <Section heading="Bridal Party" id="bridal-party" className={className}>
+    <Section heading="Wedding Party" id="bridal-party" className={className}>
       <Fragment>
         <p sx={{ mt: 4 }}>
           Meet the people we can't imagine our wedding without!

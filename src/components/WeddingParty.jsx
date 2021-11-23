@@ -18,7 +18,7 @@ import kerry from "../images/wedding-party/kerry.png";
 
 import Section from "./Section";
 
-const BridalParty = ({ className }) => {
+const WeddingParty = ({ className }) => {
   const megPeople = [
     {
       name: "Katie Delaney",
@@ -26,6 +26,8 @@ const BridalParty = ({ className }) => {
       description:
         "Meg’s older sister. Katie dubbed herself Meg’s “Best Maid” after a late-night pact" +
         " they made in 1997. They aren’t twins, but have fooled a few people over the years into thinking they were.",
+      mostLikely:
+        "whisper an inside joke to Meg and make her uncontrollably giggle at the most inopportune time.",
       avatar: katie,
     },
     {
@@ -34,6 +36,8 @@ const BridalParty = ({ className }) => {
       description:
         "Meg’s younger brother. Jack and Meg have moved beyond their childhood status of" +
         " frenemies, but still lovingly refer to one another as “Buttface” and “Stupid Idiot”.",
+      mostLikely:
+        "quietly disappear for a bit, making everyone wonder “Wait, where did Jack just go?”",
       avatar: jack,
     },
     {
@@ -42,6 +46,8 @@ const BridalParty = ({ className }) => {
       description:
         "Meg’s friend from childhood. Meg actually has no recollection of meeting Sandra for" +
         " the first time in Kindergarten; it’s as if she’s always been there.",
+      mostLikely:
+        "have an out-of-body experience if the band plays a Lizzo song.",
       avatar: sandra,
     },
     {
@@ -62,6 +68,9 @@ const BridalParty = ({ className }) => {
       description:
         "Meg’s friend from childhood. Brianna burst into Meg’s life in middle school, and has"
         + " been chatting up the Delaney family ever since.",
+      mostLikely:
+        "live up to her Ranger Rooney nickname by coming to the rescue with tissues, band-aids, Advil," +
+        " or a full first aid kit should the need arise.",
       avatar: brianna,
     },
     {
@@ -81,6 +90,9 @@ const BridalParty = ({ className }) => {
       description:
         "Meg’s friend from college. They became friends after discovering their shared love" +
         " of sarcasm and wine. Trusted source of restaurant reviews and recipe recommendations.",
+      mostLikely:
+        "be the one who makes sure the entire wedding party is at the right place at the right time," +
+        " but gives up after Jack keeps disappearing.",
       avatar: micelli,
     },
   ];
@@ -211,7 +223,7 @@ const BridalParty = ({ className }) => {
   }
 
   return (
-    <Section heading="Wedding Party" id="bridal-party" className={className}>
+    <Section heading="Wedding Party" id="wedding-party" className={className}>
       <Fragment>
         <p sx={{ mt: 4 }}>
           Meet the people we can't imagine our wedding without!
@@ -239,4 +251,4 @@ const BridalParty = ({ className }) => {
   );
 };
 
-export default BridalParty;
+export default WeddingParty;

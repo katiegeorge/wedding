@@ -12,7 +12,7 @@ import AboutUs from "../components/AboutUs";
 import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
 import ThingsToDo from "../components/ThingsToDo";
-import BridalParty from "../components/BridalParty";
+import WeddingParty from "../components/WeddingParty";
 import Quiz from "../components/Quiz";
 import HamburgerClose from "../components/HamburgerClose";
 
@@ -100,8 +100,8 @@ const IndexPage = () => {
       icon: AboutUsIcon,
     },
     {
-      label: "Bridal Party",
-      href: "bridal-party",
+      label: "Wedding Party",
+      href: "wedding-party",
       icon: BridalPartyIcon,
     },
     {
@@ -158,7 +158,7 @@ const IndexPage = () => {
             <Lodging />
             <ThingsToDo />
             <AboutUs />
-            <BridalParty />
+            <WeddingParty />
             <Quiz />
             <Footer />
           </div>

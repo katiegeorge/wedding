@@ -23,7 +23,7 @@ export default {
     text: "#000",
     background: "#FCFCFC",
     "blue-dark": "#0D2D5E",
-    "blue-light": "#8FB5F0",
+    "blue-light": "#B2CEF8",
     "gray-light": "#E1E1E1",
     "yellow-light": "#FEF8DC",
     yellow: "#FED778",

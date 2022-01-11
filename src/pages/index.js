@@ -114,6 +114,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Grid columns={"1fr"} gap={0}>
+      
         <Nav
           items={items}
           setShowSideBar={setShowSideBar}

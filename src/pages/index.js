@@ -158,7 +158,7 @@ const IndexPage = () => {
             active={showSideBar}
             sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
-          <div sx={{ filter: showSideBar ? "brightness(50%)" : "none" }}>
+          <div sx={{ filter: showSideBar ? "brightness(50%)" : "none" }} onClick={() => setShowSideBar(false)}>
             <Landing />
             <Welcome />
             <Details />

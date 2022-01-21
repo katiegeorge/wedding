@@ -13,6 +13,7 @@ import Nav from "../components/Nav";
 import Welcome from "../components/Welcome";
 import ThingsToDo from "../components/ThingsToDo";
 import WeddingParty from "../components/WeddingParty";
+import Registry from "../components/Registry";
 import Quiz from "../components/Quiz";
 import HamburgerClose from "../components/HamburgerClose";
 
@@ -24,6 +25,7 @@ import DetailsIcon from "../images/details-icon.png";
 import WelcomeIcon from "../images/welcome-icon.png";
 import ThingsToDoIcon from "../images/things-to-do-icon.png";
 import BridalPartyIcon from "../images/bridal-party-icon.png";
+import RegistryIcon from "../images/registry-icon.png";
 import QuizIcon from "../images/quiz-icon.png";
 
 function Footer() {
@@ -105,6 +107,11 @@ const IndexPage = () => {
       icon: BridalPartyIcon,
     },
     {
+      label: "Registry",
+      href: "registry",
+      icon: RegistryIcon,
+    },
+    {
       label: "Guess Who?",
       href: "quiz",
       icon: QuizIcon,
@@ -160,6 +167,7 @@ const IndexPage = () => {
             <ThingsToDo />
             <AboutUs />
             <WeddingParty />
+            <Registry />
             <Quiz />
             <Footer />
           </div>

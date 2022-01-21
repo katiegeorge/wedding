@@ -6,6 +6,7 @@ import Drinks from "../images/drinks.png";
 import Cake from "../images/wedding-cake.png";
 import Coffee from "../images/coffee.png";
 import Section from "./Section";
+import Anchor from "./Anchor";
 
 const Details = ({ className }) => {
   return (
@@ -24,7 +25,7 @@ const Details = ({ className }) => {
             </Heading>
             <strong sx={{ display: "block" }}>Welcome Drinks</strong>
             <em sx={{ fontSize: "19px", mb: 3, display: "block" }}>
-              @ Saltwater Farm
+              7:30 - 9:30pm @ Ceremony Lawn
             </em>
             <p>
               Join us on Friday evening to say hello before the big day! We'll
@@ -41,7 +42,7 @@ const Details = ({ className }) => {
             </Heading>
             <strong sx={{ display: "block" }}>Ceremony &#38; Reception </strong>
             <em sx={{ fontSize: "19px", mb: 3, display: "block" }}>
-              @ Saltwater Farm
+              4:30pm @ Ceremony Lawn
             </em>
             <p>
               We'll say "I Do" on Saturday in front of incredible PNW views, and
@@ -61,7 +62,7 @@ const Details = ({ className }) => {
             </Heading>
             <strong sx={{ display: "block" }}>Brunch</strong>
             <em sx={{ fontSize: "19px", mb: 3, display: "block" }}>
-              @ Saltwater Farm
+              9-11am @ Event Barn
             </em>
             <p>
               Join us on Sunday for a buffet brunch in the barn before everyone
@@ -73,6 +74,18 @@ const Details = ({ className }) => {
           </Box>
         </Grid>
       </Flex>
+      <Box
+      >
+        <Heading as="h2" sx={{ mt: 6, mb: 4 }}>RSVP, please!</Heading>
+        <p sx={{ mb: 3 }}>
+          Please RSVP by <strong>May 1st, 2022</strong>.
+        </p>
+        <p sx={{ mb: 4 }}>
+          To RSVP, click on the button below. Enter your name (as it is on your invitation) in order to complete the RSVP questionnaire.
+          You will be able to RSVP for all people in your party. 
+        </p>
+        <Anchor isButton href="https://withjoy.com/katie-and-meg/rsvp" target="_blank" rel="noreferrer">RSVP</Anchor>
+      </Box>
     </Section>
   );
 };

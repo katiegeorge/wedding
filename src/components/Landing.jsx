@@ -1,9 +1,10 @@
 /** @jsx jsx */
 
 import * as React from 'react';
-import { jsx, Flex, Heading, Box } from "theme-ui";
+import { jsx, Flex, Heading, Box, Button } from "theme-ui";
 import BackgroundImage from "../images/engagement-photo.png";
 import VaccineBanner from "./VaccineBanner";
+import Anchor from './Anchor';
 
 const IndexPage = ({ className }) => {
   return (
@@ -88,9 +89,10 @@ const IndexPage = ({ className }) => {
             <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
               Saltwater Farm @ Friday Harbor
             </p>
-            <p sx={{ mb: [3, 0], textAlign: ["center", "right"] }}>
+            <p sx={{ mb: [3, 4], textAlign: ["center", "right"] }}>
               San Juan Island, Washington
             </p>
+            <Anchor isButton href="https://withjoy.com/katie-and-meg/rsvp" target="_blank" rel="noreferrer">RSVP</Anchor>
           </Flex>
         </Flex>
       </Box>

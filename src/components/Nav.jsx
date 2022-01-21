@@ -2,6 +2,7 @@
 
 import { Fragment } from "react";
 import { jsx, Image, Flex } from "theme-ui";
+import Anchor from './Anchor';
 
 const Nav = ({ items, className, setShowSideBar }) => {
   return (
@@ -59,7 +60,7 @@ const Nav = ({ items, className, setShowSideBar }) => {
             </li>
           ))}
           <li sx={{ mt: 3 }}>
-            <em sx={{ fontSize: "11pt" }}>RSVP & Registry coming soon!</em>
+            <Anchor isButton href="https://withjoy.com/katie-and-meg/rsvp" target="_blank" rel="noreferrer">RSVP</Anchor>
           </li>
         </ul>
       </Fragment>

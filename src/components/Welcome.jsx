@@ -29,8 +29,7 @@ const Welcome = ({ className }) => {
             bridal party, and check out our registry information.
           </p>
           <p sx={{ mt: 4 }}>
-            So have fun, take a look around and don’t forget to RSVP (coming
-            soon)!
+            So have fun, take a look around and don’t forget to RSVP!
           </p>
           <p sx={{ mt: 4 }}>
             Finally, thank you for your ongoing love and support. We are so

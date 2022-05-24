@@ -10,12 +10,13 @@ const Anchor = ({ href, children, isButton }) => {
       rel="noreferrer"
       sx={{
         fontFamily: "heading",
+        fontWeight: "700",
         fontSize: 5,
-        bg: "green-light",
-        color: "blue-dark",
+        // bg: "green-light",
+        color: "green",
         borderRadius: "30px",
         transition: "0.2s ease",
-        textDecoration: 'none',
+        textDecoration: "underling",
         px: 3,
         py: 2,
         ":hover": {
@@ -32,16 +33,16 @@ const Anchor = ({ href, children, isButton }) => {
       target="_blank"
       rel="noreferrer"
       sx={{
-        color: "blue-dark",
-        backgroundColor: "green-light",
-        textDecoration: "none",
+        color: "green",
+        // backgroundColor: "green-light",
+        textDecoration: "underline",
         mb: 3,
         px: 1,
         fontSize: ["12pt", "14pt"],
         width: "fit-content",
-        fontWeight: "400",
+        fontWeight: "700",
         ":hover": {
-          backgroundColor: "green",
+          color: "green-light",
         },
       }}
     >

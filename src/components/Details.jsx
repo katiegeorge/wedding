@@ -6,7 +6,7 @@ import Drinks from "../images/drinks.png";
 import Cake from "../images/wedding-cake.png";
 import Coffee from "../images/coffee.png";
 import Section from "./Section";
-import Anchor from "./Anchor";
+import Map from "../images/shuttle-map.png";
 
 const Details = ({ className }) => {
   return (
@@ -75,16 +75,61 @@ const Details = ({ className }) => {
         </Grid>
       </Flex>
       <Box
+        sx={{
+          display: ["block", "block", "flex"],
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
       >
-        <Heading as="h2" sx={{ mt: 6, mb: 4 }}>RSVP, please!</Heading>
-        <p sx={{ mb: 3 }}>
-          Please RSVP by <strong>May 1st, 2022</strong>.
-        </p>
-        <p sx={{ mb: 4 }}>
-          To RSVP, click on the button below. Enter your name (as it is on your invitation) in order to complete the RSVP questionnaire.
-          You will be able to RSVP for all people in your party. 
-        </p>
-        <Anchor isButton href="https://withjoy.com/katie-and-meg/rsvp" target="_blank" rel="noreferrer">RSVP</Anchor>
+        <div>
+          <Heading as="h1" sx={{ mt: 6, mb: 4 }}>
+            Shuttle information
+          </Heading>
+
+          <strong>Friday</strong>
+          <p sx={{ mb: 3 }}>
+            Shuttles to Welcome Drinks will begin at <strong>7:15pm</strong>,
+            and loop every 15-20 minutes. The last shuttle will leave Saltwater
+            Farm at <strong>9:45pm</strong>.
+          </p>
+          <strong>Saturday</strong>
+          <p sx={{ mb: 4 }}>
+            Shuttles to the Ceremony will begin at <strong>3:30pm</strong>. The
+            last shuttle will arrive at Saltwater Farm at 4:20pm.
+          </p>
+          <ul sx={{ mb: 4 }}>
+            <li>Juniper Lane Guest House - 3:35pm</li>
+            <li>Discovery Inn - 3:45pm</li>
+            <li>Tucker House Inn / Harrison House - 3:35pm & 4:05pm</li>
+            <li>Friday Harbor House - 3:45pm & 4:15pm</li>
+            <li>Earthbox Inn - 3:55pm & 4:15pm</li>
+          </ul>
+          <p sx={{ mb: 4 }}>
+            Shuttles will began departing Saltwater Farm at{" "}
+            <strong>9:00pm</strong>. The Shuttle will depart Saltwater Farm
+            about every half hour. The last shuttle will depart at{" "}
+            <strong>12:00 midnight</strong>.
+          </p>
+          <strong>Sunday</strong>
+          <p sx={{ mb: 4 }}>
+            Shuttles to Farewell Brunch will begin at <strong>8:45am</strong>,
+            and loop every 15-20 minutes. The last shuttle will leave Saltwater
+            Farm at <strong>11:15am</strong>.
+          </p>
+        </div>
+        <Image
+          src={Map}
+          sx={{
+            display: "block",
+            mt: [3, 3, 6],
+            mr: [0, 0, 4],
+            ml: [0, 0, 4],
+            borderRadius: "5px",
+            width: ["100%", "100%", "40%"],
+            minWidth: "300px",
+            objectFit: "contain",
+          }}
+        />
       </Box>
     </Section>
   );

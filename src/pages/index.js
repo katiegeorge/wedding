@@ -77,7 +77,7 @@ const IndexPage = () => {
       icon: WelcomeIcon,
     },
     {
-      label: "Details",
+      label: "Details & Shuttles",
       href: "details",
       icon: DetailsIcon,
     },
@@ -121,7 +121,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Grid columns={"1fr"} gap={0}>
-      
         <Nav
           items={items}
           setShowSideBar={setShowSideBar}
@@ -158,7 +157,10 @@ const IndexPage = () => {
             active={showSideBar}
             sx={{ display: ["none", "block"], position: "fixed", top: "1rem" }}
           />
-          <div sx={{ filter: showSideBar ? "brightness(50%)" : "none" }} onClick={() => setShowSideBar(false)}>
+          <div
+            sx={{ filter: showSideBar ? "brightness(50%)" : "none" }}
+            onClick={() => setShowSideBar(false)}
+          >
             <Landing />
             <Welcome />
             <Details />

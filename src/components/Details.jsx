@@ -97,6 +97,7 @@ const Details = ({ className }) => {
             Shuttles to the Ceremony will begin at <strong>3:30pm</strong>. The
             last shuttle will arrive at Saltwater Farm at 4:20pm.
           </p>
+          <p sx={{ mb: 2, fontStyle: "italic" }}>Departure times:</p>
           <ul sx={{ mb: 4 }}>
             <li>Juniper Lane Guest House - 3:35pm</li>
             <li>Discovery Inn - 3:45pm</li>
